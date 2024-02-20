@@ -1,0 +1,66 @@
+Deploying Microsoft System Center Virtual Machine Manager (SCVMM) 2016 on a Windows Server 2022 environment requires careful planning and consideration, as SCVMM 2016 was primarily designed for compatibility with earlier versions of Windows Server. However, with the right approach, you can set up your environment to manage your virtualization infrastructure effectively. Below are detailed instructions to guide you through the process, including setting up prerequisites, installing SCVMM 2016, and basic configuration steps. Note that this guidance assumes a new installation and a basic understanding of Windows Server and virtualization concepts.
+1. Prepare the Environment
+a. System Requirements
+
+    Ensure your server meets the hardware requirements for SCVMM 2016 and Windows Server 2022.
+    SCVMM 2016 requires at least a 64-bit processor with a minimum speed of 2.8 GHz, 4 GB of RAM (8 GB recommended), and 40 GB of available disk space.
+
+b. Operating System Compatibility
+
+    While SCVMM 2016 was not explicitly designed for Windows Server 2022, ensuring your system is fully updated can help improve compatibility.
+
+c. Software Prerequisites
+
+    .NET Framework 4.5.2 or later: Must be installed on the server.
+    Windows ADK for Windows 10: Required for the deployment of VHDs and VHDXs.
+    SQL Server: SCVMM requires a SQL Server database. SQL Server versions that are compatible with SCVMM 2016 should be installed and configured. SQL Server 2014 or 2016 is recommended.
+
+2. Install Required Roles and Features
+
+Use PowerShell or Server Manager to install the required roles and features:
+
+    Windows Assessment and Deployment Kit (Windows ADK) for Windows 10
+    IIS for SCVMM Console
+    Remote Differential Compression
+    BitLocker Network Unlock feature, if you plan to use it.
+
+3. Prepare SQL Server
+
+    Install SQL Server on a dedicated server or the same server as SCVMM if it meets the requirements.
+    Create a new database for SCVMM and note the database server name, instance, and authentication method.
+
+4. SCVMM 2016 Installation
+
+    Download SCVMM 2016: Obtain the SCVMM 2016 installation media from the Microsoft Volume Licensing Service Center or your subscription service.
+    Run Setup: Launch the SCVMM setup from the installation media.
+        Choose the VMM management server option.
+        Accept the license terms.
+        Enter your product key or choose to install the evaluation version.
+        Select the features to install (Management Server, Console, and Reporting are the primary components).
+        Specify the installation location.
+        Configure the database settings, pointing to the SQL Server database you prepared earlier.
+        Configure the account settings for the SCVMM service. It's recommended to use a domain account with necessary permissions.
+        Configure the port settings. The default ports should be sufficient unless your environment requires custom settings.
+        Begin the installation.
+
+5. Post-Installation Configuration
+
+    Configure Network Settings: Set up logical networks, VM networks, and IP pools according to your organization's network architecture.
+    Add Hosts and Clusters: Add your Hyper-V, VMware, or other supported hosts to manage them with SCVMM.
+    Configure Storage: Add and classify storage to be used by your virtual machines.
+    Create Virtual Machine Templates: Prepare VM templates for rapid deployment.
+
+6. Validate Installation
+
+    Ensure that you can access the SCVMM Console and connect to your SCVMM server.
+    Verify that you can see and manage your hosts and VMs through the console.
+
+7. Update and Patch
+
+    After installation, check for and apply any available updates for SCVMM 2016 to ensure compatibility and security.
+
+Important Notes:
+
+    This guide provides a general approach to installing SCVMM 2016 on Windows Server 2022. Specific steps may vary based on your environment, especially around SQL Server configuration and network setup.
+    Microsoft's official support for SCVMM 2016 might not fully extend to Windows Server 2022 environments, so it's crucial to test thoroughly in a non-production environment before deploying.
+    Consider consulting the official Microsoft documentation and support forums for the latest compatibility guidance and troubleshooting tips.
