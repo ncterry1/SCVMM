@@ -1,0 +1,49 @@
+PS> Get-CimInstance -Namespace root -ClassName __Namespace | Select Name 
+
+
+Name : subscription
+
+Name : DEFAULT
+
+Name : CIMV2
+
+Name : msdtc
+
+Name : Cli
+
+Name : scvmm
+
+Name : SECURITY
+
+Name : scvmmAccelerator
+
+Name : RSOP
+
+Name : PEH
+
+Name : StandardCimv2
+
+Name : WMI
+
+Name : AccessLogging
+
+Name : directory
+
+Name : Policy
+
+Name : virtualization
+
+Name : InventoryLogging
+
+Name : Interop
+
+Name : Hardware
+
+Name : ServiceModel
+
+Name : Microsoft
+
+Name : Appv
+
+
+
