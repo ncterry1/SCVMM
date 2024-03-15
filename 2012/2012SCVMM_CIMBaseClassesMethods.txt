@@ -1,0 +1,389 @@
+PS> Get-CimClass -NameSpace root/scvmm | Where-Object {.CimClassMethods.Count -gt 0} 
+
+
+CimClassName        : __SystemSecurity
+CimSuperClassName   : 
+CimSuperClass       : 
+CimClassProperties  : {}
+CimClassQualifiers  : {singleton}
+CimClassMethods     : {GetSD, GetSecurityDescriptor, Get9XUserList, SetSD...}
+CimSystemProperties : Microsoft.Management.Infrastructure.CimSystemProperties
+
+CimClassName        : FileInformation
+CimSuperClassName   : 
+CimSuperClass       : 
+CimClassProperties  : {CreationTime, FileAttributes, Filename, FileSize...}
+CimClassQualifiers  : {dynamic, provider}
+CimClassMethods     : {CreateDirectory, CreateDirectoryBasic, CheckSharePermissions, DeleteFiles...}
+CimSystemProperties : Microsoft.Management.Infrastructure.CimSystemProperties
+
+CimClassName        : AgentManagement
+CimSuperClassName   : 
+CimSuperClass       : 
+CimClassProperties  : {ID}
+CimClassQualifiers  : {dynamic, provider}
+CimClassMethods     : {Associate, Dissociate, AssociateLibrary, GetVersion...}
+CimSystemProperties : Microsoft.Management.Infrastructure.CimSystemProperties
+
+CimClassName        : VARPEntry
+CimSuperClassName   : 
+CimSuperClass       : 
+CimClassProperties  : {Context, CustomerAddress, ExpirationForAction, Hostname...}
+CimClassQualifiers  : {dynamic, provider}
+CimClassMethods     : {SetMasterHost, Create, Remove, UpdateFullPolicy...}
+CimSystemProperties : Microsoft.Management.Infrastructure.CimSystemProperties
+
+CimClassName        : P2VSourceFixup
+CimSuperClassName   : 
+CimSuperClass       : 
+CimClassProperties  : {RegFileName, TempFilePath}
+CimClassQualifiers  : {dynamic, provider}
+CimClassMethods     : {RestoreFilesWin2K, Init, LoadSubkey, UnloadSubkey...}
+CimSystemProperties : Microsoft.Management.Infrastructure.CimSystemProperties
+
+CimClassName        : UpdateManagement
+CimSuperClassName   : 
+CimSuperClass       : 
+CimClassProperties  : {}
+CimClassQualifiers  : {dynamic, provider}
+CimClassMethods     : {ScanForUpdates, InstallUpdates}
+CimSystemProperties : Microsoft.Management.Infrastructure.CimSystemProperties
+
+CimClassName        : HttpPostDeploymentJob
+CimSuperClassName   : 
+CimSuperClass       : 
+CimClassProperties  : {Flags, HostName, InstanceID, Port...}
+CimClassQualifiers  : {dynamic, provider}
+CimClassMethods     : {CreateHttpPostClientJob, GetLastJobModificationTime, Resume, Cancel...}
+CimSystemProperties : Microsoft.Management.Infrastructure.CimSystemProperties
+
+CimClassName        : VMTask
+CimSuperClassName   : 
+CimSuperClass       : 
+CimClassProperties  : {Description, ID, Progress}
+CimClassQualifiers  : {dynamic, provider}
+CimClassMethods     : {Cancel, WaitForResult}
+CimSystemProperties : Microsoft.Management.Infrastructure.CimSystemProperties
+
+CimClassName        : NetTeamManagement
+CimSuperClassName   : 
+CimSuperClass       : 
+CimClassProperties  : {}
+CimClassQualifiers  : {dynamic, provider}
+CimClassMethods     : {CreateNicTeaming, DeleteNicTeaming, AddNicToTeam, RemoveNicFromTeam...}
+CimSystemProperties : Microsoft.Management.Infrastructure.CimSystemProperties
+
+CimClassName        : VssRequestor
+CimSuperClassName   : 
+CimSuperClass       : 
+CimClassProperties  : {}
+CimClassQualifiers  : {dynamic, provider}
+CimClassMethods     : {StartSnapshotSet, DeleteSnapshotSet, QuerySnapshotSet, CheckIfVolumeIsSnapshottable}
+CimSystemProperties : Microsoft.Management.Infrastructure.CimSystemProperties
+
+CimClassName        : GenericCommandExecutionManagement
+CimSuperClassName   : 
+CimSuperClass       : 
+CimClassProperties  : {}
+CimClassQualifiers  : {dynamic, provider}
+CimClassMethods     : {Execute}
+CimSystemProperties : Microsoft.Management.Infrastructure.CimSystemProperties
+
+CimClassName        : FileCopy
+CimSuperClassName   : 
+CimSuperClass       : 
+CimClassProperties  : {}
+CimClassQualifiers  : {dynamic, provider}
+CimClassMethods     : {BeginCopyFile}
+CimSystemProperties : Microsoft.Management.Infrastructure.CimSystemProperties
+
+CimClassName        : OSDAction
+CimSuperClassName   : 
+CimSuperClass       : 
+CimClassProperties  : {}
+CimClassQualifiers  : {provider, Static}
+CimClassMethods     : {SetOSDActionDescription, CleanUp, SetupOS, CustomizeOS...}
+CimSystemProperties : Microsoft.Management.Infrastructure.CimSystemProperties
+
+CimClassName        : DRAdapter
+CimSuperClassName   : 
+CimSuperClass       : 
+CimClassProperties  : {}
+CimClassQualifiers  : {dynamic, provider}
+CimClassMethods     : {InstallHostCertificate, RemoveHostCertificate, InstallPairingCertificate, RemovePairingCertificate...}
+CimSystemProperties : Microsoft.Management.Infrastructure.CimSystemProperties
+
+CimClassName        : VMFedAuth
+CimSuperClassName   : 
+CimSuperClass       : 
+CimClassProperties  : {}
+CimClassQualifiers  : {dynamic, provider}
+CimClassMethods     : {InstallTrustedIssuerCertificate, RemoveTrustedIssuerCertificate, IsCertificatePresent}
+CimSystemProperties : Microsoft.Management.Infrastructure.CimSystemProperties
+
+CimClassName        : DeploymentClientJob
+CimSuperClassName   : 
+CimSuperClass       : 
+CimClassProperties  : {Flags, Port, Privacy, SessionID...}
+CimClassQualifiers  : {dynamic, provider}
+CimClassMethods     : {Create, GetLastJobModificationTime, Resume, Cancel...}
+CimSystemProperties : Microsoft.Management.Infrastructure.CimSystemProperties
+
+CimClassName        : VirtualizationSANUtility
+CimSuperClassName   : 
+CimSuperClass       : 
+CimClassProperties  : {}
+CimClassQualifiers  : {provider}
+CimClassMethods     : {SetLUNMask, IsLUNAccessible, GetHBAPorts, GetDiscoveredHBAPorts...}
+CimSystemProperties : Microsoft.Management.Infrastructure.CimSystemProperties
+
+CimClassName        : MountDisk
+CimSuperClassName   : 
+CimSuperClass       : 
+CimClassProperties  : {FilePath, Flag, ID}
+CimClassQualifiers  : {dynamic, provider}
+CimClassMethods     : {Create, CreateMountedDisk, CreateMountedDiskByDeviceName, Mount...}
+CimSystemProperties : Microsoft.Management.Infrastructure.CimSystemProperties
+
+CimClassName        : V2VServerJob
+CimSuperClassName   : 
+CimSuperClass       : 
+CimClassProperties  : {Flags, ID, Port, Privacy...}
+CimClassQualifiers  : {dynamic, provider}
+CimClassMethods     : {Create, CleanUp, VmxScout, ConvertVMDK2VHD...}
+CimSystemProperties : Microsoft.Management.Infrastructure.CimSystemProperties
+
+CimClassName        : ClusterManagement
+CimSuperClassName   : 
+CimSuperClass       : 
+CimClassProperties  : {}
+CimClassQualifiers  : {dynamic, provider}
+CimClassMethods     : {EnableClusterSharedVolume, SetProperties, SetDependsOnSharedVolumes}
+CimSystemProperties : Microsoft.Management.Infrastructure.CimSystemProperties
+
+CimClassName        : AsyncTask
+CimSuperClassName   : 
+CimSuperClass       : 
+CimClassProperties  : {ClassInstanceContext, ID, Name}
+CimClassQualifiers  : {dynamic, provider}
+CimClassMethods     : {GetProgress, GetProgressExtended, GetFinalResult, CleanUp...}
+CimSystemProperties : Microsoft.Management.Infrastructure.CimSystemProperties
+
+CimClassName        : CIM_Service
+CimSuperClassName   : CIM_LogicalElement
+CimSuperClass       : ROOT/scvmm:CIM_LogicalElement
+CimClassProperties  : {Caption, Description, InstallDate, Name...}
+CimClassQualifiers  : {Abstract}
+CimClassMethods     : {StartService, StopService}
+CimSystemProperties : Microsoft.Management.Infrastructure.CimSystemProperties
+
+CimClassName        : TestMiniProvider
+CimSuperClassName   : 
+CimSuperClass       : 
+CimClassProperties  : {ErrorInfoArrayProperty, ErrorInfoProperty, ID, Name}
+CimClassQualifiers  : {dynamic, provider}
+CimClassMethods     : {Create, GetLargePayload, MethodReturningRefArray, MethodReturningStringArray...}
+CimSystemProperties : Microsoft.Management.Infrastructure.CimSystemProperties
+
+CimClassName        : WDSManagement
+CimSuperClassName   : 
+CimSuperClass       : 
+CimClassProperties  : {}
+CimClassQualifiers  : {dynamic, provider}
+CimClassMethods     : {RestartService, SetupRemInst, GetRemInstRoot, DeployNbps...}
+CimSystemProperties : Microsoft.Management.Infrastructure.CimSystemProperties
+
+CimClassName        : DeploymentServerJob
+CimSuperClassName   : 
+CimSuperClass       : 
+CimClassProperties  : {Flags, ID, Port, Privacy...}
+CimClassQualifiers  : {dynamic, provider}
+CimClassMethods     : {Create, CleanUp}
+CimSystemProperties : Microsoft.Management.Infrastructure.CimSystemProperties
+
+CimClassName        : PerfDataAgent
+CimSuperClassName   : 
+CimSuperClass       : 
+CimClassProperties  : {}
+CimClassQualifiers  : {dynamic, provider}
+CimClassMethods     : {GetAllPerfData}
+CimSystemProperties : Microsoft.Management.Infrastructure.CimSystemProperties
+
+CimClassName        : AzManUtility
+CimSuperClassName   : 
+CimSuperClass       : 
+CimClassProperties  : {}
+CimClassQualifiers  : {dynamic, provider}
+CimClassMethods     : {SetRoleAssignment, SetScopes, SetStorePath, SetScopeAndRoleAssignment}
+CimSystemProperties : Microsoft.Management.Infrastructure.CimSystemProperties
+
+CimClassName        : VMVirtualDisk
+CimSuperClassName   : CIM_VirtualDisk
+CimSuperClass       : ROOT/scvmm:CIM_VirtualDisk
+CimClassProperties  : {ObjectError, DiskSize, Path, ComputerSystemInstanceID...}
+CimClassQualifiers  : {Abstract}
+CimClassMethods     : {Delete}
+CimSystemProperties : Microsoft.Management.Infrastructure.CimSystemProperties
+
+CimClassName        : VMFloppyDisk
+CimSuperClassName   : VMVirtualDisk
+CimSuperClass       : ROOT/scvmm:VMVirtualDisk
+CimClassProperties  : {ObjectError, DiskSize, Path, ComputerSystemInstanceID...}
+CimClassQualifiers  : {dynamic, provider}
+CimClassMethods     : {Delete}
+CimSystemProperties : Microsoft.Management.Infrastructure.CimSystemProperties
+
+CimClassName        : VMHardDisk
+CimSuperClassName   : VMVirtualDisk
+CimSuperClass       : ROOT/scvmm:VMVirtualDisk
+CimClassProperties  : {ObjectError, DiskSize, Path, ComputerSystemInstanceID...}
+CimClassQualifiers  : {dynamic, provider}
+CimClassMethods     : {Delete, SetParent, MergeWithParent, Compact...}
+CimSystemProperties : Microsoft.Management.Infrastructure.CimSystemProperties
+
+CimClassName        : VMDVDDisk
+CimSuperClassName   : VMVirtualDisk
+CimSuperClass       : ROOT/scvmm:VMVirtualDisk
+CimClassProperties  : {ObjectError, DiskSize, Path, ComputerSystemInstanceID...}
+CimClassQualifiers  : {dynamic, provider}
+CimClassMethods     : {Delete}
+CimSystemProperties : Microsoft.Management.Infrastructure.CimSystemProperties
+
+CimClassName        : VMVirtualNetworkSwitch
+CimSuperClassName   : IPartialObject
+CimSuperClass       : ROOT/scvmm:IPartialObject
+CimClassProperties  : {ObjectError, DeviceID, DHCPEnabled, File...}
+CimClassQualifiers  : {dynamic, provider}
+CimClassMethods     : {GetNetworkAdapters, Rename, AttachHostConnection, Remove...}
+CimSystemProperties : Microsoft.Management.Infrastructure.CimSystemProperties
+
+CimClassName        : VMDevice
+CimSuperClassName   : IPartialObject
+CimSuperClass       : ROOT/scvmm:IPartialObject
+CimClassProperties  : {ObjectError, ComputerSystemInstanceID, DeviceID, Name}
+CimClassQualifiers  : {Abstract, CategoryID}
+CimClassMethods     : {Remove}
+CimSystemProperties : Microsoft.Management.Infrastructure.CimSystemProperties
+
+CimClassName        : VMMemory
+CimSuperClassName   : VMDevice
+CimSuperClass       : ROOT/scvmm:VMDevice
+CimClassProperties  : {ObjectError, ComputerSystemInstanceID, DeviceID, Name...}
+CimClassQualifiers  : {CategoryID, dynamic, provider}
+CimClassMethods     : {Remove, QuiesceDevice, RestoreProperties, SetPowerState...}
+CimSystemProperties : Microsoft.Management.Infrastructure.CimSystemProperties
+
+CimClassName        : VMNetworkAdapter
+CimSuperClassName   : VMDevice
+CimSuperClass       : ROOT/scvmm:VMDevice
+CimClassProperties  : {ObjectError, ComputerSystemInstanceID, DeviceID, Name...}
+CimClassQualifiers  : {CategoryID, dynamic, provider}
+CimClassMethods     : {Remove, AttachToVirtualNetwork, DetachFromVirtualNetwork, SetMACAddress}
+CimSystemProperties : Microsoft.Management.Infrastructure.CimSystemProperties
+
+CimClassName        : VMController
+CimSuperClassName   : VMDevice
+CimSuperClass       : ROOT/scvmm:VMDevice
+CimClassProperties  : {ObjectError, ComputerSystemInstanceID, DeviceID, Name...}
+CimClassQualifiers  : {CategoryID, Abstract}
+CimClassMethods     : {Remove}
+CimSystemProperties : Microsoft.Management.Infrastructure.CimSystemProperties
+
+CimClassName        : VMIDEController
+CimSuperClassName   : VMController
+CimSuperClass       : ROOT/scvmm:VMController
+CimClassProperties  : {ObjectError, ComputerSystemInstanceID, DeviceID, Name...}
+CimClassQualifiers  : {CategoryID, dynamic, provider}
+CimClassMethods     : {Remove, AddDVDDrive, GetDVDDrives, AddHardDiskDrive...}
+CimSystemProperties : Microsoft.Management.Infrastructure.CimSystemProperties
+
+CimClassName        : VMDHCPVirtualNetworkServer
+CimSuperClassName   : IPartialObject
+CimSuperClass       : ROOT/scvmm:IPartialObject
+CimClassProperties  : {ObjectError, DefaultGatewayAddress, DNSServers, EndingIPAddress...}
+CimClassQualifiers  : {dynamic, provider}
+CimClassMethods     : {SetDHCPSupport, Configure, ConfigureLeaseTimes, ConfigureDNSServers...}
+CimSystemProperties : Microsoft.Management.Infrastructure.CimSystemProperties
+
+CimClassName        : VMSerialPort
+CimSuperClassName   : IPartialObject
+CimSuperClass       : ROOT/scvmm:IPartialObject
+CimClassProperties  : {ObjectError, ComputerSystemInstanceID, ConnectImmediately, ID...}
+CimClassQualifiers  : {dynamic, provider}
+CimClassMethods     : {Configure}
+CimSystemProperties : Microsoft.Management.Infrastructure.CimSystemProperties
+
+CimClassName        : VMComputerSystem
+CimSuperClassName   : CIM_VirtualComputerSystem
+CimSuperClass       : ROOT/scvmm:CIM_VirtualComputerSystem
+CimClassProperties  : {ObjectError, ID, Name, ProcessorCount...}
+CimClassQualifiers  : {dynamic, provider}
+CimClassMethods     : {SetName, SetAllocatedRAM, SetUndoDisks, MergeUndoDisks...}
+CimSystemProperties : Microsoft.Management.Infrastructure.CimSystemProperties
+
+CimClassName        : VMSCSIController
+CimSuperClassName   : IPartialObject
+CimSuperClass       : ROOT/scvmm:IPartialObject
+CimClassProperties  : {ObjectError, ID, IsShared, MachineID...}
+CimClassQualifiers  : {dynamic, provider}
+CimClassMethods     : {ConfigureController, Remove}
+CimSystemProperties : Microsoft.Management.Infrastructure.CimSystemProperties
+
+CimClassName        : VMIntegrationService
+CimSuperClassName   : IPartialObject
+CimSuperClass       : ROOT/scvmm:IPartialObject
+CimClassProperties  : {ObjectError, AdditionsPresent, AdditionsVersion, ComputerName...}
+CimClassQualifiers  : {dynamic, provider}
+CimClassMethods     : {IsHeartBeating, ShutdownOperatingSystem, IsShutDownEnabled, InstallAdditions}
+CimSystemProperties : Microsoft.Management.Infrastructure.CimSystemProperties
+
+CimClassName        : VMAttachedDrive
+CimSuperClassName   : IPartialObject
+CimSuperClass       : ROOT/scvmm:IPartialObject
+CimClassProperties  : {ObjectError, BusType, ComputerSystemInstanceID, Lun...}
+CimClassQualifiers  : {}
+CimClassMethods     : {Remove}
+CimSystemProperties : Microsoft.Management.Infrastructure.CimSystemProperties
+
+CimClassName        : VMDVDDrive
+CimSuperClassName   : VMAttachedDrive
+CimSuperClass       : ROOT/scvmm:VMAttachedDrive
+CimClassProperties  : {ObjectError, BusType, ComputerSystemInstanceID, Lun...}
+CimClassQualifiers  : {dynamic, provider}
+CimClassMethods     : {Remove, AttachImage, DettachImage}
+CimSystemProperties : Microsoft.Management.Infrastructure.CimSystemProperties
+
+CimClassName        : VMHardDiskDrive
+CimSuperClassName   : VMAttachedDrive
+CimSuperClass       : ROOT/scvmm:VMAttachedDrive
+CimClassProperties  : {ObjectError, BusType, ComputerSystemInstanceID, Lun...}
+CimClassQualifiers  : {dynamic, provider}
+CimClassMethods     : {Remove, AttachImage}
+CimSystemProperties : Microsoft.Management.Infrastructure.CimSystemProperties
+
+CimClassName        : VMService
+CimSuperClassName   : IPartialObject
+CimSuperClass       : ROOT/scvmm:IPartialObject
+CimClassProperties  : {ObjectError, AvailableProcessorReserve, DefaultComputerSystemPath, DefaultVirtualDiskCreationPath...}
+CimClassQualifiers  : {dynamic, provider}
+CimClassMethods     : {ImportVirtualComputerSystem, ExportVirtualComputerSystem, DeleteVirtualComputerSystem, CreateVirtualHardDisk...}
+CimSystemProperties : Microsoft.Management.Infrastructure.CimSystemProperties
+
+CimClassName        : VMFloppyDrive
+CimSuperClassName   : IPartialObject
+CimSuperClass       : ROOT/scvmm:IPartialObject
+CimClassProperties  : {ObjectError, DriveNumber, MachineID, MachineInstanceID...}
+CimClassQualifiers  : {dynamic, provider}
+CimClassMethods     : {AttachImage, ReleaseImage}
+CimSystemProperties : Microsoft.Management.Infrastructure.CimSystemProperties
+
+CimClassName        : P2VServerJob
+CimSuperClassName   : 
+CimSuperClass       : 
+CimClassProperties  : {Flags, ID, Port, Privacy...}
+CimClassQualifiers  : {dynamic, provider}
+CimClassMethods     : {Create, CleanUp, HWScoutOffline, HWScout...}
+CimSystemProperties : Microsoft.Management.Infrastructure.CimSystemProperties
+
+
+
