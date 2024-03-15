@@ -1,0 +1,1655 @@
+PS> Get-CimClass -Namespace root/scvmm -ClassName *
+
+
+Name       : GetSD
+ReturnType : UInt32
+Parameters : {SD}
+Qualifiers : {Static}
+
+Name       : GetSecurityDescriptor
+ReturnType : UInt32
+Parameters : {Descriptor}
+Qualifiers : {Static}
+
+Name       : Get9XUserList
+ReturnType : UInt32
+Parameters : {ul}
+Qualifiers : {Static}
+
+Name       : SetSD
+ReturnType : UInt32
+Parameters : {SD}
+Qualifiers : {Static}
+
+Name       : SetSecurityDescriptor
+ReturnType : UInt32
+Parameters : {Descriptor}
+Qualifiers : {Static}
+
+Name       : Set9XUserList
+ReturnType : UInt32
+Parameters : {ul}
+Qualifiers : {Static}
+
+Name       : GetCallerAccessRights
+ReturnType : UInt32
+Parameters : {rights}
+Qualifiers : {Static}
+
+Name       : CreateDirectory
+ReturnType : UInt32
+Parameters : {NewDirectory, RootPath, SetHiddenAttribute, DirectoryNameCreated...}
+Qualifiers : {CarmineMethodSignature, implemented, static}
+
+Name       : CreateDirectoryBasic
+ReturnType : UInt32
+Parameters : {DirectoryPath, SetHiddenAttribute, ErrorInfo}
+Qualifiers : {CarmineMethodSignature, implemented, static}
+
+Name       : CheckSharePermissions
+ReturnType : UInt32
+Parameters : {SharePath, ErrorInfo}
+Qualifiers : {CarmineMethodSignature, implemented, static}
+
+Name       : DeleteFiles
+ReturnType : UInt32
+Parameters : {Filenames, ErrorInfo}
+Qualifiers : {CarmineMethodSignature, implemented, static}
+
+Name       : MoveFile
+ReturnType : UInt32
+Parameters : {SourceFilename, TargetFilename, ErrorInfo}
+Qualifiers : {CarmineMethodSignature, implemented, static}
+
+Name       : CopyFile
+ReturnType : UInt32
+Parameters : {SourceFilename, TargetFilename, ErrorInfo}
+Qualifiers : {CarmineMethodSignature, implemented, static}
+
+Name       : SetObjectSecurity
+ReturnType : UInt32
+Parameters : {addPermissions, Filename, RemovePermissionInShare, SDDLString...}
+Qualifiers : {CarmineMethodSignature, implemented, static}
+
+Name       : AddRemoveSIDAccess
+ReturnType : UInt32
+Parameters : {Filename, IsAdd, SID, ErrorInfo}
+Qualifiers : {CarmineMethodSignature, implemented, static}
+
+Name       : AddRemoveUserAccess
+ReturnType : UInt32
+Parameters : {AllowWrite, Filename, IsAdd, RefreshVirtualServer...}
+Qualifiers : {CarmineMethodSignature, implemented, static}
+
+Name       : GetPhysicalFilename
+ReturnType : UInt32
+Parameters : {Filename, ErrorInfo, PhysicalFilename}
+Qualifiers : {CarmineMethodSignature, implemented, static}
+
+Name       : GetExpandedFilename
+ReturnType : UInt32
+Parameters : {Filename, ErrorInfo, ExpandedFilename}
+Qualifiers : {CarmineMethodSignature, implemented, static}
+
+Name       : CreateISO
+ReturnType : UInt32
+Parameters : {Filename, ResourceDirectory, UseUDFFileSystem, ErrorInfo}
+Qualifiers : {CarmineMethodSignature, implemented, static}
+
+Name       : SupportsIMAPI
+ReturnType : UInt32
+Parameters : {ErrorInfo, ImapiInstalled}
+Qualifiers : {CarmineMethodSignature, implemented, static}
+
+Name       : PerformFileChecksum
+ReturnType : UInt32
+Parameters : {Filename, ErrorInfo, TaskHandle}
+Qualifiers : {CarmineMethodSignature, implemented, static}
+
+Name       : SetReadOnlyAttribute
+ReturnType : UInt32
+Parameters : {Filename, Flag, ErrorInfo}
+Qualifiers : {CarmineMethodSignature, implemented, static}
+
+Name       : SetLastModificationTime
+ReturnType : UInt32
+Parameters : {Filename, LastWriteTime, ErrorInfo}
+Qualifiers : {CarmineMethodSignature, implemented, static}
+
+Name       : ResetHiddenAttribute
+ReturnType : UInt32
+Parameters : {Filename, ErrorInfo}
+Qualifiers : {CarmineMethodSignature, implemented, static}
+
+Name       : SetHiddenAttribute
+ReturnType : UInt32
+Parameters : {Filename, ErrorInfo}
+Qualifiers : {CarmineMethodSignature, implemented, static}
+
+Name       : ReadFileData
+ReturnType : UInt32
+Parameters : {Filename, FileStreamName, ErrorInfo, FileData}
+Qualifiers : {CarmineMethodSignature, implemented, static}
+
+Name       : WriteFileData
+ReturnType : UInt32
+Parameters : {CreateNewFile, FileData, Filename, FileStreamName...}
+Qualifiers : {CarmineMethodSignature, implemented, static}
+
+Name       : CreateEmptyFile
+ReturnType : UInt32
+Parameters : {Filename, ErrorInfo}
+Qualifiers : {CarmineMethodSignature, implemented, static}
+
+Name       : QueryVHDData
+ReturnType : UInt32
+Parameters : {Filename, DiskSignature, ErrorInfo}
+Qualifiers : {CarmineMethodSignature, implemented, static}
+
+Name       : GetFileInformation
+ReturnType : UInt32
+Parameters : {Path, CreationTime, ErrorInfo, FileAttributes...}
+Qualifiers : {CarmineMethodSignature, implemented, static}
+
+Name       : QueryVHD
+ReturnType : UInt32
+Parameters : {Filename, AbsoluteParentPath, CurrentSize, DiskType...}
+Qualifiers : {CarmineMethodSignature, implemented, static}
+
+Name       : UpdateVHDParent
+ReturnType : UInt32
+Parameters : {Filename, ParentFileName, ErrorInfo}
+Qualifiers : {CarmineMethodSignature, implemented, static}
+
+Name       : ComputeBlockDeltas
+ReturnType : UInt32
+Parameters : {FileA, FileB, TargetDeltasFilename, ErrorInfo}
+Qualifiers : {CarmineMethodSignature, implemented, static}
+
+Name       : ApplyBlockDeltas
+ReturnType : UInt32
+Parameters : {FileDeltaChanges, Filename, ErrorInfo}
+Qualifiers : {CarmineMethodSignature, implemented, static}
+
+Name       : CreateVHDFromPlainFile
+ReturnType : UInt32
+Parameters : {Filename, ErrorInfo}
+Qualifiers : {CarmineMethodSignature, implemented, static}
+
+Name       : ParseDriverINFFile
+ReturnType : UInt32
+Parameters : {Filename, DriverDigest, ErrorInfo}
+Qualifiers : {CarmineMethodSignature, implemented, static}
+
+Name       : Associate
+ReturnType : UInt32
+Parameters : {AssociatedName, CertificateSubjectName, ServerName, TakeOwnership...}
+Qualifiers : {CarmineMethodSignature, implemented, static}
+
+Name       : Dissociate
+ReturnType : UInt32
+Parameters : {ErrorInfo}
+Qualifiers : {CarmineMethodSignature, implemented, static}
+
+Name       : AssociateLibrary
+ReturnType : UInt32
+Parameters : {CertificateSubjectName, ErrorInfo, ExportedCertificate}
+Qualifiers : {CarmineMethodSignature, implemented, static}
+
+Name       : GetVersion
+ReturnType : UInt32
+Parameters : {ErrorInfo, IsAmd64, Version}
+Qualifiers : {CarmineMethodSignature, implemented, static}
+
+Name       : GetMachineInfo
+ReturnType : UInt32
+Parameters : {ErrorInfo, IsLH, RebootRequired}
+Qualifiers : {CarmineMethodSignature, implemented, static}
+
+Name       : GetComputerAccountName
+ReturnType : UInt32
+Parameters : {ComputerAccountName, ErrorInfo}
+Qualifiers : {CarmineMethodSignature, implemented, static}
+
+Name       : GetVirtualizationStatus
+ReturnType : UInt32
+Parameters : {ErrorInfo, HyperVEnabled, HyperVVersionSupported, VirtualServerInstalled}
+Qualifiers : {CarmineMethodSignature, implemented, static}
+
+Name       : EnableHyperV
+ReturnType : UInt32
+Parameters : {ErrorInfo, TaskHandle}
+Qualifiers : {CarmineMethodSignature, implemented, static}
+
+Name       : EnableMpio
+ReturnType : UInt32
+Parameters : {HardwareIds, ErrorInfo, TaskHandle}
+Qualifiers : {CarmineMethodSignature, implemented, static}
+
+Name       : InstallMsi
+ReturnType : UInt32
+Parameters : {FileName, InstallMsiType, ErrorInfo, TaskHandle}
+Qualifiers : {CarmineMethodSignature, implemented, static}
+
+Name       : AddPeerCertificate
+ReturnType : UInt32
+Parameters : {ExportedCertificate, Port, ServerName, ErrorInfo}
+Qualifiers : {CarmineMethodSignature, implemented, static}
+
+Name       : RemovePeerCertificate
+ReturnType : UInt32
+Parameters : {ServerName, ErrorInfo}
+Qualifiers : {CarmineMethodSignature, implemented, static}
+
+Name       : ExportCertificateByName
+ReturnType : UInt32
+Parameters : {ByHash, ServerName, ErrorInfo, ExportedCertificate}
+Qualifiers : {CarmineMethodSignature, implemented, static}
+
+Name       : Reboot
+ReturnType : UInt32
+Parameters : {Flags, ErrorInfo}
+Qualifiers : {CarmineMethodSignature, implemented, static}
+
+Name       : AddToLocalAdminGroup
+ReturnType : UInt32
+Parameters : {AccountName, ErrorInfo}
+Qualifiers : {CarmineMethodSignature, implemented, static}
+
+Name       : SetMasterHost
+ReturnType : UInt32
+Parameters : {Hostname, IsServer, Port}
+Qualifiers : {CarmineMethodSignature, implemented, static}
+
+Name       : Create
+ReturnType : UInt32
+Parameters : {Context, CustomerAddress, ExpirationForAction, Hostname...}
+Qualifiers : {CarmineMethodSignature, implemented, static}
+
+Name       : Remove
+ReturnType : UInt32
+Parameters : {CustomerAddress, Hostname, ErrorInfo}
+Qualifiers : {CarmineMethodSignature, implemented}
+
+Name       : UpdateFullPolicy
+ReturnType : UInt32
+Parameters : {IsLastPart, PartNumber, PolicyBlob, PolicySize...}
+Qualifiers : {implemented, static}
+
+Name       : UpdatePartialPolicy
+ReturnType : UInt32
+Parameters : {ClientRequestNumber, IsLastPart, PartNumber, PolicyBlob...}
+Qualifiers : {implemented, static}
+
+Name       : RestoreFilesWin2K
+ReturnType : UInt32
+Parameters : {VolumeRoot, ErrorInfo}
+Qualifiers : {CarmineMethodSignature, implemented, static}
+
+Name       : Init
+ReturnType : UInt32
+Parameters : {RegFileName, ErrorInfo, P2VSourceFixup}
+Qualifiers : {CarmineMethodSignature, implemented, static}
+
+Name       : LoadSubkey
+ReturnType : UInt32
+Parameters : {Subkey, DefaultControlSetNum, ErrorInfo, RootSubKey}
+Qualifiers : {CarmineMethodSignature, implemented}
+
+Name       : UnloadSubkey
+ReturnType : UInt32
+Parameters : {CommitChange, ErrorInfo}
+Qualifiers : {CarmineMethodSignature, implemented}
+
+Name       : DisableServices
+ReturnType : UInt32
+Parameters : {List, ErrorInfo}
+Qualifiers : {CarmineMethodSignature, implemented}
+
+Name       : DisableDrivers
+ReturnType : UInt32
+Parameters : {List, ErrorInfo}
+Qualifiers : {CarmineMethodSignature, implemented}
+
+Name       : RemovePrograms
+ReturnType : UInt32
+Parameters : {List, ErrorInfo}
+Qualifiers : {CarmineMethodSignature, implemented}
+
+Name       : AddService
+ReturnType : UInt32
+Parameters : {DependOnServiceArray, DisplayName, Group, ImagePath...}
+Qualifiers : {CarmineMethodSignature, implemented}
+
+Name       : AddDriver
+ReturnType : UInt32
+Parameters : {ClassGUID, ID, ServiceName, ErrorInfo}
+Qualifiers : {CarmineMethodSignature, implemented}
+
+Name       : UpdateMountedDevice
+ReturnType : UInt32
+Parameters : {Name, Value, ErrorInfo}
+Qualifiers : {CarmineMethodSignature, implemented}
+
+Name       : RegSetValue
+ReturnType : UInt32
+Parameters : {Name, Subkey, Value, ErrorInfo}
+Qualifiers : {CarmineMethodSignature, implemented}
+
+Name       : RegGetValue
+ReturnType : UInt32
+Parameters : {Name, Subkey, ErrorInfo, Value}
+Qualifiers : {CarmineMethodSignature, implemented}
+
+Name       : RegSetIntValue
+ReturnType : UInt32
+Parameters : {Name, Subkey, Value, ErrorInfo}
+Qualifiers : {CarmineMethodSignature, implemented}
+
+Name       : RegGetIntValue
+ReturnType : UInt32
+Parameters : {Name, Subkey, ErrorInfo, Value}
+Qualifiers : {CarmineMethodSignature, implemented}
+
+Name       : Cleanup
+ReturnType : UInt32
+Parameters : {ErrorInfo}
+Qualifiers : {CarmineMethodSignature, implemented}
+
+Name       : RemoveService
+ReturnType : UInt32
+Parameters : {Name, ErrorInfo}
+Qualifiers : {CarmineMethodSignature, implemented}
+
+Name       : ScanForUpdates
+ReturnType : UInt32
+Parameters : {RevisionIds, TargetPath, UpdateIds, WSUSConnectionString...}
+Qualifiers : {CarmineMethodSignature, implemented, static}
+
+Name       : InstallUpdates
+ReturnType : UInt32
+Parameters : {RevisionIds, TargetPath, UpdateIds, WSUSConnectionString...}
+Qualifiers : {CarmineMethodSignature, implemented, static}
+
+Name       : CreateHttpPostClientJob
+ReturnType : UInt32
+Parameters : {CertificateToTrust, Flags, HostName, Password...}
+Qualifiers : {CarmineMethodSignature, implemented, static}
+
+Name       : GetLastJobModificationTime
+ReturnType : UInt32
+Parameters : {ErrorInfo, JobModificationTime}
+Qualifiers : {CarmineMethodSignature, implemented}
+
+Name       : Resume
+ReturnType : UInt32
+Parameters : {ErrorInfo}
+Qualifiers : {CarmineMethodSignature, implemented}
+
+Name       : Cancel
+ReturnType : UInt32
+Parameters : {ErrorInfo}
+Qualifiers : {CarmineMethodSignature, implemented}
+
+Name       : Suspend
+ReturnType : UInt32
+Parameters : {ErrorInfo}
+Qualifiers : {CarmineMethodSignature, implemented}
+
+Name       : CleanUp
+ReturnType : UInt32
+Parameters : {CleanUpOptions, ErrorInfo}
+Qualifiers : {CarmineMethodSignature, implemented}
+
+Name       : GetProgress
+ReturnType : UInt32
+Parameters : {ErrorInfo, FileSizeBytes, Progress, State...}
+Qualifiers : {CarmineMethodSignature, implemented}
+
+Name       : GetError
+ReturnType : Reference
+Parameters : {}
+Qualifiers : {implemented}
+
+Name       : CreateHttpPostClientJobEx
+ReturnType : UInt32
+Parameters : {CertificateToTrust, Flags, HostName, Password...}
+Qualifiers : {CarmineMethodSignature, implemented, static}
+
+Name       : Cancel
+ReturnType : UInt16
+Parameters : {}
+Qualifiers : {Description, Implemented}
+
+Name       : WaitForResult
+ReturnType : UInt16
+Parameters : {Timeout}
+Qualifiers : {Description, Implemented}
+
+Name       : CreateNicTeaming
+ReturnType : UInt32
+Parameters : {LoadBalancingAlgorithm, NicNames, TeamingMode, TeamName...}
+Qualifiers : {CarmineMethodSignature, implemented, static}
+
+Name       : DeleteNicTeaming
+ReturnType : UInt32
+Parameters : {TeamInstanceId, ErrorInfo}
+Qualifiers : {CarmineMethodSignature, implemented, static}
+
+Name       : AddNicToTeam
+ReturnType : UInt32
+Parameters : {NicName, TeamInstanceId, ErrorInfo}
+Qualifiers : {CarmineMethodSignature, implemented, static}
+
+Name       : RemoveNicFromTeam
+ReturnType : UInt32
+Parameters : {NicTeamMemberID, ErrorInfo}
+Qualifiers : {CarmineMethodSignature, implemented, static}
+
+Name       : CreateSwitchTeaming
+ReturnType : UInt32
+Parameters : {NicNames, TeamName, ErrorInfo, NicIPSettingsError...}
+Qualifiers : {CarmineMethodSignature, implemented, static}
+
+Name       : DeleteSwitchTeaming
+ReturnType : UInt32
+Parameters : {TeamInstanceId, ErrorInfo}
+Qualifiers : {CarmineMethodSignature, implemented, static}
+
+Name       : DeleteSwitchAndTeam
+ReturnType : UInt32
+Parameters : {SwitchId, TeamName, TeamType, ErrorInfo}
+Qualifiers : {CarmineMethodSignature, implemented, static}
+
+Name       : EnableVMQOnAdapter
+ReturnType : UInt32
+Parameters : {AdapterInterfaceDescription, AdapterInterfaceGuid, ErrorInfo}
+Qualifiers : {CarmineMethodSignature, implemented, static}
+
+Name       : StartSnapshotSet
+ReturnType : UInt32
+Parameters : {VolumeNamesList, ErrorInfo, SnapshotSetID, TaskHandle}
+Qualifiers : {CarmineMethodSignature, implemented, static}
+
+Name       : DeleteSnapshotSet
+ReturnType : UInt32
+Parameters : {SnapshotSetID, ErrorInfo}
+Qualifiers : {CarmineMethodSignature, implemented, static}
+
+Name       : QuerySnapshotSet
+ReturnType : UInt32
+Parameters : {SnapshotSetID, VolumeName, DeviceObjectName, ErrorInfo}
+Qualifiers : {CarmineMethodSignature, implemented, static}
+
+Name       : CheckIfVolumeIsSnapshottable
+ReturnType : UInt32
+Parameters : {VolumeName, ErrorInfo, IsVolumeSnapshottable}
+Qualifiers : {CarmineMethodSignature, implemented, static}
+
+Name       : Execute
+ReturnType : UInt32
+Parameters : {WMIVariables, ErrorInfo, TaskHandle}
+Qualifiers : {CarmineMethodSignature, implemented, static}
+
+Name       : BeginCopyFile
+ReturnType : UInt32
+Parameters : {SourceDomain, SourceFilePath, SourcePassword, SourceUserName...}
+Qualifiers : {implemented, static}
+
+Name       : SetOSDActionDescription
+ReturnType : UInt32
+Parameters : {OSDActionDescription, ResetProgress, ErrorInfo}
+Qualifiers : {CarmineMethodSignature, Implemented, Static}
+
+Name       : CleanUp
+ReturnType : UInt32
+Parameters : {OSDActionDescription, ErrorInfo}
+Qualifiers : {CarmineMethodSignature, Implemented, Static}
+
+Name       : SetupOS
+ReturnType : UInt32
+Parameters : {IsSystemEFI, OSDActionDescription, SystemPartitionDriveLetter, VHDFullPath...}
+Qualifiers : {CarmineMethodSignature, Implemented, Static}
+
+Name       : CustomizeOS
+ReturnType : UInt32
+Parameters : {OSDActionDescription, UnattendFullPath, VHDFullPath, ErrorInfo}
+Qualifiers : {CarmineMethodSignature, Implemented, Static}
+
+Name       : EnableHyperV
+ReturnType : UInt32
+Parameters : {OSDActionDescription, VHDFullPath, ErrorInfo}
+Qualifiers : {CarmineMethodSignature, Implemented, Static}
+
+Name       : EnableFileServerRole
+ReturnType : UInt32
+Parameters : {OSDActionDescription, VHDFullPath, ErrorInfo}
+Qualifiers : {CarmineMethodSignature, Implemented, Static}
+
+Name       : EnableFailoverClusteringFeature
+ReturnType : UInt32
+Parameters : {OSDActionDescription, VHDFullPath, ErrorInfo}
+Qualifiers : {CarmineMethodSignature, Implemented, Static}
+
+Name       : EnableMultipathIOFeature
+ReturnType : UInt32
+Parameters : {OSDActionDescription, VHDFullPath, ErrorInfo}
+Qualifiers : {CarmineMethodSignature, Implemented, Static}
+
+Name       : InjectDriver
+ReturnType : UInt32
+Parameters : {OSDActionDescription, RootDriverPath, VHDFullPath, ErrorInfo...}
+Qualifiers : {CarmineMethodSignature, Implemented, Static}
+
+Name       : Convert
+ReturnType : UInt32
+Parameters : {OSDActionDescription, VHDFullPath, ErrorInfo, TaskHandle}
+Qualifiers : {CarmineMethodSignature, Implemented, Static}
+
+Name       : DownloadFileFromUrl
+ReturnType : UInt32
+Parameters : {FileSizeBytes, HttpResource, HttpServerName, HttpServerPort...}
+Qualifiers : {CarmineMethodSignature, Implemented, Static}
+
+Name       : ConfigDisk
+ReturnType : UInt32
+Parameters : {BiosCompatibilityMode, BootDiskNumber, Disks, OSDActionDescription...}
+Qualifiers : {CarmineMethodSignature, Implemented, Static}
+
+Name       : ScheduleShutdown
+ReturnType : UInt32
+Parameters : {OSDActionDescription, TimeUntilShutdownMinutes, ErrorInfo}
+Qualifiers : {CarmineMethodSignature, Implemented, Static}
+
+Name       : CancelScheduledShutdown
+ReturnType : UInt32
+Parameters : {OSDActionDescription, ErrorInfo}
+Qualifiers : {CarmineMethodSignature, Implemented, Static}
+
+Name       : InstallHostCertificate
+ReturnType : UInt32
+Parameters : {Flags, PfxBlob, ErrorInfo}
+Qualifiers : {CarmineMethodSignature, implemented, static}
+
+Name       : RemoveHostCertificate
+ReturnType : UInt32
+Parameters : {CertificateThumbprint, ErrorInfo}
+Qualifiers : {CarmineMethodSignature, implemented, static}
+
+Name       : InstallPairingCertificate
+ReturnType : UInt32
+Parameters : {SerializedCertificate, ErrorInfo}
+Qualifiers : {CarmineMethodSignature, implemented, static}
+
+Name       : RemovePairingCertificate
+ReturnType : UInt32
+Parameters : {CertificateThumbprint, ErrorInfo}
+Qualifiers : {CarmineMethodSignature, implemented, static}
+
+Name       : ImportBrokerCertificate
+ReturnType : UInt32
+Parameters : {SerializedCertificate, ErrorInfo}
+Qualifiers : {CarmineMethodSignature, implemented, static}
+
+Name       : RevokeCertificate
+ReturnType : UInt32
+Parameters : {CertificateStore, CertificateThumbprint, ErrorInfo}
+Qualifiers : {CarmineMethodSignature, implemented, static}
+
+Name       : IsCertificatePresent
+ReturnType : UInt32
+Parameters : {CertificateStore, CertificateThumbprint, ErrorInfo, IsCertPresent}
+Qualifiers : {CarmineMethodSignature, implemented, static}
+
+Name       : UpdateFirewallRule
+ReturnType : UInt32
+Parameters : {Enable, RuleName, ErrorInfo}
+Qualifiers : {CarmineMethodSignature, implemented, static}
+
+Name       : UpdateCertRevocationCheck
+ReturnType : UInt32
+Parameters : {Enable, ErrorInfo}
+Qualifiers : {CarmineMethodSignature, implemented, static}
+
+Name       : InstallTrustedIssuerCertificate
+ReturnType : UInt32
+Parameters : {CerBlob, ErrorInfo}
+Qualifiers : {CarmineMethodSignature, implemented, static}
+
+Name       : RemoveTrustedIssuerCertificate
+ReturnType : UInt32
+Parameters : {CertificateThumbprint, ErrorInfo}
+Qualifiers : {CarmineMethodSignature, implemented, static}
+
+Name       : IsCertificatePresent
+ReturnType : UInt32
+Parameters : {CertificateThumbprint, ErrorInfo, IsCertPresent}
+Qualifiers : {CarmineMethodSignature, implemented, static}
+
+Name       : Create
+ReturnType : UInt32
+Parameters : {Flags, Port, Privacy, ResetJob...}
+Qualifiers : {CarmineMethodSignature, implemented, static}
+
+Name       : GetLastJobModificationTime
+ReturnType : UInt32
+Parameters : {ErrorInfo, JobModificationTime}
+Qualifiers : {CarmineMethodSignature, implemented}
+
+Name       : Resume
+ReturnType : UInt32
+Parameters : {ErrorInfo}
+Qualifiers : {CarmineMethodSignature, implemented}
+
+Name       : Cancel
+ReturnType : UInt32
+Parameters : {ErrorInfo}
+Qualifiers : {CarmineMethodSignature, implemented}
+
+Name       : Suspend
+ReturnType : UInt32
+Parameters : {ErrorInfo}
+Qualifiers : {CarmineMethodSignature, implemented}
+
+Name       : CleanUp
+ReturnType : UInt32
+Parameters : {CleanUpOptions, ErrorInfo}
+Qualifiers : {CarmineMethodSignature, implemented}
+
+Name       : GetProgress
+ReturnType : UInt32
+Parameters : {ErrorInfo, FileSizeBytes, Progress, State...}
+Qualifiers : {CarmineMethodSignature, implemented}
+
+Name       : GetError
+ReturnType : Reference
+Parameters : {}
+Qualifiers : {implemented}
+
+Name       : SetLUNMask
+ReturnType : UInt32
+Parameters : {IsiSCSILUN, StorageIdentifier, StorageIdentifierType, TargetWWN...}
+Qualifiers : {Description, implemented, static}
+
+Name       : IsLUNAccessible
+ReturnType : UInt32
+Parameters : {StorageIdentifier, StorageIdentifierType}
+Qualifiers : {Description, implemented, static}
+
+Name       : GetHBAPorts
+ReturnType : UInt32
+Parameters : {HBAPorts}
+Qualifiers : {Description, implemented, static}
+
+Name       : GetDiscoveredHBAPorts
+ReturnType : UInt32
+Parameters : {HBAPorts}
+Qualifiers : {Description, implemented, static}
+
+Name       : GetDiscoveredFabrics
+ReturnType : UInt32
+Parameters : {Fabrics}
+Qualifiers : {Description, implemented, static}
+
+Name       : GetLUNControllerPorts
+ReturnType : UInt32
+Parameters : {storageIdentifier, StorageIdentifierType, ControllerPorts}
+Qualifiers : {Description, implemented, static}
+
+Name       : GetIscsiLUNTargets
+ReturnType : UInt32
+Parameters : {storageIdentifier, StorageIdentifierType, IscsiTargets}
+Qualifiers : {Description, implemented, static}
+
+Name       : GetAssociatedIscsiTargetsForLUNMigration
+ReturnType : UInt32
+Parameters : {CurrentlyConnectedTargets, StorageIdentifier, StorageIdentifierType, ChapSettings...}
+Qualifiers : {Description, implemented, static}
+
+Name       : SetCHAPPasswordForTargetInitiatorPair
+ReturnType : UInt32
+Parameters : {InitiatorName, password, StorageIdentifier, StorageIdentifierType...}
+Qualifiers : {Description, implemented, static}
+
+Name       : GetPortalsForIscsiTarget
+ReturnType : UInt32
+Parameters : {StorageIdentifier, StorageIdentifierType, TargetName, Count...}
+Qualifiers : {Description, implemented, static}
+
+Name       : CreateVPort
+ReturnType : UInt32
+Parameters : {PhysicalAdapterWMIInstanceName, PhysicalPortWWPN, Tag, VirtualName...}
+Qualifiers : {Description, implemented, static}
+
+Name       : RemoveVPort
+ReturnType : UInt32
+Parameters : {PhysicalAdapterWMIInstanceName, PhysicalPortWWPN, WWPN}
+Qualifiers : {Description, implemented, static}
+
+Name       : ReenumerateISCSISubsystems
+ReturnType : UInt32
+Parameters : {TaskHandle}
+Qualifiers : {Description, implemented, static}
+
+Name       : RefreshVDSObjectIdCache
+ReturnType : UInt32
+Parameters : {TaskHandle}
+Qualifiers : {Description, implemented, static}
+
+Name       : Create
+ReturnType : UInt32
+Parameters : {FilePath, Flag, ErrorInfo, MountDisk}
+Qualifiers : {CarmineMethodSignature, implemented, static}
+
+Name       : CreateMountedDisk
+ReturnType : UInt32
+Parameters : {FilePath, SCSIAddress, ErrorInfo, MountDisk}
+Qualifiers : {CarmineMethodSignature, implemented, static}
+
+Name       : CreateMountedDiskByDeviceName
+ReturnType : UInt32
+Parameters : {DeviceName, MountPointDir, ErrorInfo, MountDisk}
+Qualifiers : {CarmineMethodSignature, implemented, static}
+
+Name       : Mount
+ReturnType : UInt32
+Parameters : {ErrorInfo, TaskHandle}
+Qualifiers : {CarmineMethodSignature, implemented}
+
+Name       : Unmount
+ReturnType : UInt32
+Parameters : {ErrorInfo, TaskHandle}
+Qualifiers : {CarmineMethodSignature, implemented}
+
+Name       : MountPointVolume
+ReturnType : UInt32
+Parameters : {VolumeGuid, ErrorInfo, VolumeName}
+Qualifiers : {CarmineMethodSignature, implemented}
+
+Name       : UnmountPointVolume
+ReturnType : UInt32
+Parameters : {VolumeGuid, ErrorInfo}
+Qualifiers : {CarmineMethodSignature, implemented}
+
+Name       : Query
+ReturnType : UInt32
+Parameters : {DiskNumber, ErrorInfo, PhysicalDeviceName, VolumeGuid}
+Qualifiers : {CarmineMethodSignature, implemented}
+
+Name       : GetDiskIdentifier
+ReturnType : UInt32
+Parameters : {DiskIdentifier, ErrorInfo}
+Qualifiers : {CarmineMethodSignature, implemented}
+
+Name       : Cleanup
+ReturnType : UInt32
+Parameters : {ErrorInfo}
+Qualifiers : {CarmineMethodSignature, implemented}
+
+Name       : ExtendVolume
+ReturnType : UInt32
+Parameters : {VolumeGuid, ErrorInfo, TaskHandle}
+Qualifiers : {CarmineMethodSignature, implemented, static}
+
+Name       : Create
+ReturnType : UInt32
+Parameters : {Flags, Port, Privacy, SessionID...}
+Qualifiers : {CarmineMethodSignature, implemented, static}
+
+Name       : CleanUp
+ReturnType : UInt32
+Parameters : {CleanUpOptions, ErrorInfo}
+Qualifiers : {CarmineMethodSignature, implemented}
+
+Name       : VmxScout
+ReturnType : UInt32
+Parameters : {FileName, parseInternalFiles, ErrorInfo, VmXml}
+Qualifiers : {CarmineMethodSignature, implemented, static}
+
+Name       : ConvertVMDK2VHD
+ReturnType : UInt32
+Parameters : {vhdTargetFilename, vmdkSourceFilename, ErrorInfo, TaskHandle}
+Qualifiers : {CarmineMethodSignature, implemented, static}
+
+Name       : GetVMDKInfo
+ReturnType : UInt32
+Parameters : {parseInternalFiles, vmdkSourceFilename, DiskSize, ErrorInfo...}
+Qualifiers : {CarmineMethodSignature, implemented, static}
+
+Name       : GetVMDKType
+ReturnType : UInt32
+Parameters : {vmdkSourceFilename, ErrorInfo, VirtualHardDiskType}
+Qualifiers : {CarmineMethodSignature, implemented, static}
+
+Name       : CopyPhysicalToFile
+ReturnType : UInt32
+Parameters : {jobType, sourceFilename, targetFilename, ErrorInfo...}
+Qualifiers : {CarmineMethodSignature, implemented, static}
+
+Name       : EnableClusterSharedVolume
+ReturnType : UInt32
+Parameters : {ErrorInfo}
+Qualifiers : {CarmineMethodSignature, implemented, static}
+
+Name       : SetProperties
+ReturnType : UInt32
+Parameters : {ObjectPath, PropertieUpdates, ErrorInfo}
+Qualifiers : {CarmineMethodSignature, implemented, static}
+
+Name       : SetDependsOnSharedVolumes
+ReturnType : UInt32
+Parameters : {DependsOnSharedVolumes, ObjectPath, ErrorInfo}
+Qualifiers : {CarmineMethodSignature, implemented, static}
+
+Name       : GetProgress
+ReturnType : UInt32
+Parameters : {ErrorInfo, Progress}
+Qualifiers : {CarmineMethodSignature, implemented}
+
+Name       : GetProgressExtended
+ReturnType : UInt32
+Parameters : {Custom, ErrorInfo, Progress}
+Qualifiers : {CarmineMethodSignature, implemented}
+
+Name       : GetFinalResult
+ReturnType : UInt32
+Parameters : {ErrorInfo, FinalResult, FinalTaskData, FinalTaskErrorInfo...}
+Qualifiers : {CarmineMethodSignature, implemented}
+
+Name       : CleanUp
+ReturnType : UInt32
+Parameters : {ErrorInfo}
+Qualifiers : {CarmineMethodSignature, implemented}
+
+Name       : Cancel
+ReturnType : UInt32
+Parameters : {ErrorInfo}
+Qualifiers : {CarmineMethodSignature, implemented}
+
+Name       : SetCancel
+ReturnType : UInt32
+Parameters : {ErrorInfo}
+Qualifiers : {CarmineMethodSignature, implemented}
+
+Name       : StartService
+ReturnType : UInt32
+Parameters : {}
+Qualifiers : {}
+
+Name       : StopService
+ReturnType : UInt32
+Parameters : {}
+Qualifiers : {}
+
+Name       : Create
+ReturnType : UInt32
+Parameters : {Name, ErrorInfo}
+Qualifiers : {CarmineMethodSignature, implemented, static}
+
+Name       : GetLargePayload
+ReturnType : UInt32
+Parameters : {ErrorInfo, Name}
+Qualifiers : {CarmineMethodSignature, implemented, static}
+
+Name       : MethodReturningRefArray
+ReturnType : Boolean
+Parameters : {ErrorInfoAlone, ErrorInfoArray}
+Qualifiers : {implemented, static}
+
+Name       : MethodReturningStringArray
+ReturnType : Boolean
+Parameters : {StringArray, StringScalar}
+Qualifiers : {implemented, static}
+
+Name       : MethodReturningUINT32Array
+ReturnType : Boolean
+Parameters : {UINT32Array, UINT32Scalar}
+Qualifiers : {implemented, static}
+
+Name       : MethodReturningErrorInfoObject
+ReturnType : Boolean
+Parameters : {ErrorInfoObject}
+Qualifiers : {implemented, static}
+
+Name       : MethodTakingErrorInfoObject
+ReturnType : Boolean
+Parameters : {ErrorInfoObject}
+Qualifiers : {implemented, static}
+
+Name       : MethodTakingErrorInfoRef
+ReturnType : Boolean
+Parameters : {ErrorInfoObject}
+Qualifiers : {implemented, static}
+
+Name       : GenericEntry
+ReturnType : UInt32
+Parameters : {Name, ErrorInfo}
+Qualifiers : {CarmineMethodSignature, implemented, static}
+
+Name       : RestartService
+ReturnType : UInt32
+Parameters : {startIfStopped, ErrorInfo}
+Qualifiers : {CarmineMethodSignature, implemented, static}
+
+Name       : SetupRemInst
+ReturnType : UInt32
+Parameters : {ErrorInfo}
+Qualifiers : {CarmineMethodSignature, implemented, static}
+
+Name       : GetRemInstRoot
+ReturnType : UInt32
+Parameters : {dirName, ErrorInfo}
+Qualifiers : {CarmineMethodSignature, implemented, static}
+
+Name       : DeployNbps
+ReturnType : UInt32
+Parameters : {ErrorInfo}
+Qualifiers : {CarmineMethodSignature, implemented, static}
+
+Name       : RegisterProvider
+ReturnType : UInt32
+Parameters : {identity, providerName, providerPath, serverUri...}
+Qualifiers : {CarmineMethodSignature, implemented, static}
+
+Name       : UnregisterProvider
+ReturnType : UInt32
+Parameters : {providerName, ErrorInfo}
+Qualifiers : {CarmineMethodSignature, implemented, static}
+
+Name       : IsWdsInstalled
+ReturnType : UInt32
+Parameters : {ErrorInfo, installed}
+Qualifiers : {CarmineMethodSignature, implemented, static}
+
+Name       : IsWdsRunning
+ReturnType : UInt32
+Parameters : {ErrorInfo, running}
+Qualifiers : {CarmineMethodSignature, implemented, static}
+
+Name       : StopService
+ReturnType : UInt32
+Parameters : {ErrorInfo}
+Qualifiers : {CarmineMethodSignature, implemented, static}
+
+Name       : StartService
+ReturnType : UInt32
+Parameters : {ErrorInfo}
+Qualifiers : {CarmineMethodSignature, implemented, static}
+
+Name       : Create
+ReturnType : UInt32
+Parameters : {Flags, Port, Privacy, SessionID...}
+Qualifiers : {CarmineMethodSignature, implemented, static}
+
+Name       : CleanUp
+ReturnType : UInt32
+Parameters : {CleanUpOptions, ErrorInfo}
+Qualifiers : {CarmineMethodSignature, implemented}
+
+Name       : GetAllPerfData
+ReturnType : UInt32
+Parameters : {HostName, ErrorInfo, PerfObjectsXml}
+Qualifiers : {CarmineMethodSignature, implemented, static}
+
+Name       : SetRoleAssignment
+ReturnType : UInt32
+Parameters : {Accounts, AccountsAreSIDs, RoleName, Scope...}
+Qualifiers : {CarmineMethodSignature, implemented, static}
+
+Name       : SetScopes
+ReturnType : UInt32
+Parameters : {Scope, ErrorInfo}
+Qualifiers : {CarmineMethodSignature, implemented, static}
+
+Name       : SetStorePath
+ReturnType : UInt32
+Parameters : {StorePath, ErrorInfo}
+Qualifiers : {CarmineMethodSignature, implemented, static}
+
+Name       : SetScopeAndRoleAssignment
+ReturnType : UInt32
+Parameters : {Scopes, SetScopes, ErrorInfo, ScopeResults}
+Qualifiers : {CarmineMethodSignature, implemented, static}
+
+Name       : Delete
+ReturnType : UInt32
+Parameters : {ErrorInfo}
+Qualifiers : {CarmineMethodSignature, Description, implemented}
+
+Name       : Delete
+ReturnType : UInt32
+Parameters : {ErrorInfo}
+Qualifiers : {Description, implemented}
+
+Name       : Delete
+ReturnType : UInt32
+Parameters : {ErrorInfo}
+Qualifiers : {Description, implemented}
+
+Name       : SetParent
+ReturnType : UInt32
+Parameters : {ParentFile, ErrorInfo}
+Qualifiers : {CarmineMethodSignature, Description, implemented}
+
+Name       : MergeWithParent
+ReturnType : UInt32
+Parameters : {TargetFile, ErrorInfo, TaskHandle}
+Qualifiers : {CarmineMethodSignature, Description, implemented}
+
+Name       : Compact
+ReturnType : UInt32
+Parameters : {ErrorInfo, TaskHandle}
+Qualifiers : {CarmineMethodSignature, Description, implemented}
+
+Name       : ConvertDiskType
+ReturnType : UInt32
+Parameters : {NewType, TargetFile, ErrorInfo, TaskHandle}
+Qualifiers : {CarmineMethodSignature, Description, implemented}
+
+Name       : Delete
+ReturnType : UInt32
+Parameters : {ErrorInfo}
+Qualifiers : {Description, implemented}
+
+Name       : GetNetworkAdapters
+ReturnType : UInt32
+Parameters : {Adapters, ErrorInfo}
+Qualifiers : {CarmineMethodSignature, implemented}
+
+Name       : Rename
+ReturnType : UInt32
+Parameters : {DeviceID, ErrorInfo}
+Qualifiers : {CarmineMethodSignature, implemented}
+
+Name       : AttachHostConnection
+ReturnType : UInt32
+Parameters : {HostConnection, ErrorInfo}
+Qualifiers : {CarmineMethodSignature, implemented}
+
+Name       : Remove
+ReturnType : UInt32
+Parameters : {ErrorInfo}
+Qualifiers : {CarmineMethodSignature, implemented}
+
+Name       : GetVMDHCPVirtualNetworkServer
+ReturnType : UInt32
+Parameters : {ErrorInfo, VMDHCPVirtualNetworkServer}
+Qualifiers : {CarmineMethodSignature, implemented}
+
+Name       : Reset
+ReturnType : UInt32
+Parameters : {ErrorInfo}
+Qualifiers : {Implemented}
+
+Name       : Remove
+ReturnType : UInt32
+Parameters : {ErrorInfo}
+Qualifiers : {CarmineMethodSignature, implemented}
+
+Name       : Remove
+ReturnType : UInt32
+Parameters : {ErrorInfo}
+Qualifiers : {CarmineMethodSignature, implemented}
+
+Name       : QuiesceDevice
+ReturnType : UInt32
+Parameters : {Quiesce}
+Qualifiers : {Description, Implemented}
+
+Name       : RestoreProperties
+ReturnType : UInt32
+Parameters : {}
+Qualifiers : {Description, Implemented}
+
+Name       : SetPowerState
+ReturnType : UInt32
+Parameters : {PowerState, Time}
+Qualifiers : {Implemented}
+
+Name       : Reset
+ReturnType : UInt32
+Parameters : {}
+Qualifiers : {Implemented}
+
+Name       : Remove
+ReturnType : UInt32
+Parameters : {ErrorInfo}
+Qualifiers : {CarmineMethodSignature, implemented}
+
+Name       : AttachToVirtualNetwork
+ReturnType : UInt32
+Parameters : {VirtualNetworkID, ErrorInfo}
+Qualifiers : {CarmineMethodSignature, implemented}
+
+Name       : DetachFromVirtualNetwork
+ReturnType : UInt32
+Parameters : {ErrorInfo}
+Qualifiers : {CarmineMethodSignature, implemented}
+
+Name       : SetMACAddress
+ReturnType : UInt32
+Parameters : {MACAddress, UseStaticMACAddress, ErrorInfo}
+Qualifiers : {CarmineMethodSignature, implemented}
+
+Name       : Remove
+ReturnType : UInt32
+Parameters : {ErrorInfo}
+Qualifiers : {CarmineMethodSignature, implemented}
+
+Name       : Remove
+ReturnType : UInt32
+Parameters : {ErrorInfo}
+Qualifiers : {CarmineMethodSignature, implemented}
+
+Name       : AddDVDDrive
+ReturnType : UInt32
+Parameters : {Lun, Path, Port, Target...}
+Qualifiers : {CarmineMethodSignature, implemented}
+
+Name       : GetDVDDrives
+ReturnType : UInt32
+Parameters : {drives, ErrorInfo}
+Qualifiers : {CarmineMethodSignature, implemented}
+
+Name       : AddHardDiskDrive
+ReturnType : UInt32
+Parameters : {Lun, Path, Port, Target...}
+Qualifiers : {CarmineMethodSignature, implemented}
+
+Name       : GetHardDiskDrives
+ReturnType : UInt32
+Parameters : {drives, ErrorInfo}
+Qualifiers : {CarmineMethodSignature, implemented}
+
+Name       : RemoveDrive
+ReturnType : UInt32
+Parameters : {Port, Target, ErrorInfo}
+Qualifiers : {CarmineMethodSignature, implemented}
+
+Name       : Reset
+ReturnType : UInt32
+Parameters : {}
+Qualifiers : {Implemented}
+
+Name       : SetDHCPSupport
+ReturnType : UInt32
+Parameters : {DHCPEnabled, ErrorInfo}
+Qualifiers : {CarmineMethodSignature, implemented}
+
+Name       : Configure
+ReturnType : UInt32
+Parameters : {DefaultGatewayAddress, EndingIPAddress, Network, NetworkMask...}
+Qualifiers : {CarmineMethodSignature, implemented}
+
+Name       : ConfigureLeaseTimes
+ReturnType : UInt32
+Parameters : {LeaseRebindingTime, LeaseRenewalTime, LeaseTime, ErrorInfo}
+Qualifiers : {CarmineMethodSignature, implemented}
+
+Name       : ConfigureDNSServers
+ReturnType : UInt32
+Parameters : {DNSServers, ErrorInfo}
+Qualifiers : {CarmineMethodSignature, implemented}
+
+Name       : ConfigureWINSServers
+ReturnType : UInt32
+Parameters : {WINSServers, ErrorInfo}
+Qualifiers : {CarmineMethodSignature, implemented}
+
+Name       : Configure
+ReturnType : UInt32
+Parameters : {ConnectImmediately, PortName, Type, ErrorInfo}
+Qualifiers : {CarmineMethodSignature, implemented}
+
+Name       : SetName
+ReturnType : UInt32
+Parameters : {Name, ErrorInfo}
+Qualifiers : {CarmineMethodSignature, Description, implemented}
+
+Name       : SetAllocatedRAM
+ReturnType : UInt32
+Parameters : {allocatedRAM, ErrorInfo}
+Qualifiers : {CarmineMethodSignature, Description, implemented}
+
+Name       : SetUndoDisks
+ReturnType : UInt32
+Parameters : {enable, ErrorInfo}
+Qualifiers : {CarmineMethodSignature, Description, implemented}
+
+Name       : MergeUndoDisks
+ReturnType : UInt32
+Parameters : {ErrorInfo, TaskHandle}
+Qualifiers : {CarmineMethodSignature, Description, implemented}
+
+Name       : DiscardUndoDisks
+ReturnType : UInt32
+Parameters : {ErrorInfo}
+Qualifiers : {CarmineMethodSignature, Description, implemented}
+
+Name       : DiscardSavedState
+ReturnType : UInt32
+Parameters : {ErrorInfo}
+Qualifiers : {CarmineMethodSignature, Description, implemented}
+
+Name       : Reset
+ReturnType : UInt32
+Parameters : {ErrorInfo}
+Qualifiers : {CarmineMethodSignature, implemented}
+
+Name       : Delete
+ReturnType : Boolean
+Parameters : {ErrorInfo}
+Qualifiers : {CarmineMethodSignature, Description, implemented}
+
+Name       : TakeSnapshot
+ReturnType : UInt32
+Parameters : {SnapshotName, StartTime}
+Qualifiers : {Description}
+
+Name       : Migrate
+ReturnType : UInt32
+Parameters : {MigrateTime, TargetServer}
+Qualifiers : {Description}
+
+Name       : SetStateAsync
+ReturnType : UInt32
+Parameters : {State, ErrorInfo, TaskHandle}
+Qualifiers : {CarmineMethodSignature, Description, implemented}
+
+Name       : Create
+ReturnType : UInt32
+Parameters : {Name, Path, ErrorInfo, VirtualMachine}
+Qualifiers : {CarmineMethodSignature, implemented, Static}
+
+Name       : CreateVM
+ReturnType : UInt32
+Parameters : {DiskPath, Memory, Name, Path...}
+Qualifiers : {CarmineMethodSignature, implemented, Static}
+
+Name       : RegisterVM
+ReturnType : UInt32
+Parameters : {Path, ErrorInfo, VirtualMachine}
+Qualifiers : {CarmineMethodSignature, implemented, Static}
+
+Name       : UnregisterVM
+ReturnType : UInt32
+Parameters : {ID, InstanceID, ErrorInfo}
+Qualifiers : {CarmineMethodSignature, implemented, Static}
+
+Name       : IsHeartBeating
+ReturnType : UInt32
+Parameters : {}
+Qualifiers : {implemented}
+
+Name       : GetCpu
+ReturnType : UInt32
+Parameters : {Cpu, ErrorInfo}
+Qualifiers : {CarmineMethodSignature, implemented}
+
+Name       : GetIDEControllers
+ReturnType : UInt32
+Parameters : {controllers, ErrorInfo}
+Qualifiers : {CarmineMethodSignature, implemented}
+
+Name       : GetSCSIControllers
+ReturnType : UInt32
+Parameters : {Controllers, ErrorInfo}
+Qualifiers : {CarmineMethodSignature, implemented}
+
+Name       : AddSCSIController
+ReturnType : UInt32
+Parameters : {BusNumber, IsShared, Controller, ErrorInfo}
+Qualifiers : {CarmineMethodSignature, implemented}
+
+Name       : AttachFloppyImage
+ReturnType : UInt32
+Parameters : {ImagePath, ErrorInfo}
+Qualifiers : {CarmineMethodSignature, implemented}
+
+Name       : GetFloppyDrives
+ReturnType : UInt32
+Parameters : {drives, ErrorInfo}
+Qualifiers : {CarmineMethodSignature, implemented}
+
+Name       : AddDVDDrive
+ReturnType : UInt32
+Parameters : {BusType, Lun, Path, Port...}
+Qualifiers : {CarmineMethodSignature, implemented}
+
+Name       : GetDVDDrives
+ReturnType : UInt32
+Parameters : {drives, ErrorInfo}
+Qualifiers : {CarmineMethodSignature, implemented}
+
+Name       : AddHardDiskDrive
+ReturnType : UInt32
+Parameters : {BusType, ImagePath, Lun, Path...}
+Qualifiers : {CarmineMethodSignature, implemented}
+
+Name       : GetHardDiskDrives
+ReturnType : UInt32
+Parameters : {drives, ErrorInfo}
+Qualifiers : {CarmineMethodSignature, implemented}
+
+Name       : RemoveDrive
+ReturnType : UInt32
+Parameters : {BusNumber, BusType, Target, ErrorInfo}
+Qualifiers : {CarmineMethodSignature, implemented}
+
+Name       : GetIntegrationService
+ReturnType : UInt32
+Parameters : {ErrorInfo, IntegrationService}
+Qualifiers : {CarmineMethodSignature, implemented}
+
+Name       : AddNetworkAdapter
+ReturnType : UInt32
+Parameters : {ErrorInfo, NetworkAdapter}
+Qualifiers : {CarmineMethodSignature, implemented}
+
+Name       : GetNetworkAdapters
+ReturnType : UInt32
+Parameters : {Adapters, ErrorInfo}
+Qualifiers : {CarmineMethodSignature, implemented}
+
+Name       : GetSerialPorts
+ReturnType : UInt32
+Parameters : {ErrorInfo, SerialPorts}
+Qualifiers : {CarmineMethodSignature, implemented}
+
+Name       : SetConfigurationProperty
+ReturnType : UInt32
+Parameters : {IsBoolValue, Name, Value, ErrorInfo}
+Qualifiers : {CarmineMethodSignature, Description, implemented}
+
+Name       : GetConfigurationProperty
+ReturnType : UInt32
+Parameters : {Name, ErrorInfo, Value}
+Qualifiers : {CarmineMethodSignature, Description, implemented}
+
+Name       : SetAutoStartAtLaunch
+ReturnType : UInt32
+Parameters : {AutoStartValue, ErrorInfo}
+Qualifiers : {CarmineMethodSignature, Description, implemented}
+
+Name       : SetAutoStartAtLaunchDelay
+ReturnType : UInt32
+Parameters : {Delay, ErrorInfo}
+Qualifiers : {CarmineMethodSignature, Description, implemented}
+
+Name       : SetShutdownActionOnQuit
+ReturnType : UInt32
+Parameters : {ShutdownAction, ErrorInfo}
+Qualifiers : {CarmineMethodSignature, Description, implemented}
+
+Name       : SetAccountNameAndPassword
+ReturnType : UInt32
+Parameters : {AccountName, Password, ErrorInfo}
+Qualifiers : {CarmineMethodSignature, Description, implemented}
+
+Name       : SetRunAsDefinedAccount
+ReturnType : UInt32
+Parameters : {Enabled, ErrorInfo}
+Qualifiers : {CarmineMethodSignature, Description, implemented}
+
+Name       : SetSchedulingParameters
+ReturnType : UInt32
+Parameters : {MaxSystemCapacity, RelativeWeight, ReservedSystemCapacity, ErrorInfo}
+Qualifiers : {CarmineMethodSignature, Description, implemented}
+
+Name       : ConfigureController
+ReturnType : UInt32
+Parameters : {IsShared, Target, ErrorInfo}
+Qualifiers : {CarmineMethodSignature, implemented}
+
+Name       : Remove
+ReturnType : UInt32
+Parameters : {ErrorInfo}
+Qualifiers : {CarmineMethodSignature, implemented}
+
+Name       : IsHeartBeating
+ReturnType : UInt32
+Parameters : {ErrorInfo, HeartBeat}
+Qualifiers : {CarmineMethodSignature, Description, implemented}
+
+Name       : ShutdownOperatingSystem
+ReturnType : UInt32
+Parameters : {ErrorInfo, TaskHandle}
+Qualifiers : {CarmineMethodSignature, Description, implemented}
+
+Name       : IsShutDownEnabled
+ReturnType : UInt32
+Parameters : {Enabled, ErrorInfo}
+Qualifiers : {CarmineMethodSignature, Description, implemented}
+
+Name       : InstallAdditions
+ReturnType : UInt32
+Parameters : {ErrorInfo}
+Qualifiers : {CarmineMethodSignature, Description, implemented}
+
+Name       : Remove
+ReturnType : UInt32
+Parameters : {}
+Qualifiers : {Implemented}
+
+Name       : Remove
+ReturnType : UInt32
+Parameters : {}
+Qualifiers : {Implemented}
+
+Name       : AttachImage
+ReturnType : UInt32
+Parameters : {ImagePath, ErrorInfo}
+Qualifiers : {CarmineMethodSignature, Implemented}
+
+Name       : DettachImage
+ReturnType : UInt32
+Parameters : {ErrorInfo}
+Qualifiers : {CarmineMethodSignature, Implemented}
+
+Name       : Remove
+ReturnType : UInt32
+Parameters : {}
+Qualifiers : {Implemented}
+
+Name       : AttachImage
+ReturnType : UInt32
+Parameters : {ImagePath, ErrorInfo}
+Qualifiers : {CarmineMethodSignature, Implemented}
+
+Name       : ImportVirtualComputerSystem
+ReturnType : UInt32
+Parameters : {Path}
+Qualifiers : {Description, Implemented}
+
+Name       : ExportVirtualComputerSystem
+ReturnType : UInt32
+Parameters : {ID, Path}
+Qualifiers : {Description, Implemented}
+
+Name       : DeleteVirtualComputerSystem
+ReturnType : UInt32
+Parameters : {ID, ErrorInfo}
+Qualifiers : {CarmineMethodSignature, Description, Implemented}
+
+Name       : CreateVirtualHardDisk
+ReturnType : UInt32
+Parameters : {DiskType, ParentPath, Path, Size...}
+Qualifiers : {CarmineMethodSignature, Description, Implemented}
+
+Name       : CreateVirtualFloppyDisk
+ReturnType : UInt32
+Parameters : {Path, ErrorInfo}
+Qualifiers : {CarmineMethodSignature, Description, Implemented}
+
+Name       : GetHardDiskByFilename
+ReturnType : UInt32
+Parameters : {Path, Disk, ErrorInfo}
+Qualifiers : {CarmineMethodSignature, implemented}
+
+Name       : GetHardDisks
+ReturnType : UInt32
+Parameters : {Disks, ErrorInfo}
+Qualifiers : {CarmineMethodSignature, implemented}
+
+Name       : GetDVDDisks
+ReturnType : UInt32
+Parameters : {Disks, ErrorInfo}
+Qualifiers : {CarmineMethodSignature, implemented}
+
+Name       : CreateVirtualNetworkSwitch
+ReturnType : UInt32
+Parameters : {ConfigurationPath, VirtualNetworkID, ErrorInfo, Switch}
+Qualifiers : {CarmineMethodSignature, Description, Implemented}
+
+Name       : GetVirtualNetworkSwitches
+ReturnType : UInt32
+Parameters : {ErrorInfo, Switches}
+Qualifiers : {CarmineMethodSignature, Implemented}
+
+Name       : GetVSNetAdapterNames
+ReturnType : UInt32
+Parameters : {ErrorInfo, NetAdapterNames}
+Qualifiers : {CarmineMethodSignature, implemented}
+
+Name       : GetDefaultVMConfigurationPath
+ReturnType : UInt32
+Parameters : {ErrorInfo, Path}
+Qualifiers : {CarmineMethodSignature, implemented}
+
+Name       : SetVMRCConfiguration
+ReturnType : UInt32
+Parameters : {Enable, EnableMultipleConnections, Port, Timeout...}
+Qualifiers : {CarmineMethodSignature, implemented}
+
+Name       : CreateVMRCCertificateRequest
+ReturnType : UInt32
+Parameters : {DistinguishedName, KeyLength, CertificateRequest, ErrorInfo}
+Qualifiers : {CarmineMethodSignature, implemented}
+
+Name       : SetVMRCCertificate
+ReturnType : UInt32
+Parameters : {Certificate, EnableEncryption, ErrorInfo}
+Qualifiers : {CarmineMethodSignature, implemented}
+
+Name       : GetVMRCCertificate
+ReturnType : UInt32
+Parameters : {Certificate, ErrorInfo}
+Qualifiers : {CarmineMethodSignature, implemented}
+
+Name       : StartService
+ReturnType : UInt32
+Parameters : {}
+Qualifiers : {Implemented, Override}
+
+Name       : StopService
+ReturnType : UInt32
+Parameters : {}
+Qualifiers : {Implemented, Override}
+
+Name       : GetHyperVSystemCompatibilityInfo
+ReturnType : UInt32
+Parameters : {ComputerSystemWMIInstanceString, CreationClassName, Name, SystemCreationClassName...}
+Qualifiers : {CarmineMethodSignature, implemented, Static}
+
+Name       : CheckHyperVSystemCompatibilityInfo
+ReturnType : UInt32
+Parameters : {CompatibilityInfo, CreationClassName, Name, SystemCreationClassName...}
+Qualifiers : {CarmineMethodSignature, implemented, Static}
+
+Name       : AttachImage
+ReturnType : UInt32
+Parameters : {ImagePath, ErrorInfo}
+Qualifiers : {CarmineMethodSignature, implemented}
+
+Name       : ReleaseImage
+ReturnType : UInt32
+Parameters : {ErrorInfo}
+Qualifiers : {CarmineMethodSignature, implemented}
+
+Name       : Create
+ReturnType : UInt32
+Parameters : {Flags, Port, Privacy, SessionID...}
+Qualifiers : {CarmineMethodSignature, implemented, static}
+
+Name       : CleanUp
+ReturnType : UInt32
+Parameters : {CleanUpOptions, ErrorInfo}
+Qualifiers : {CarmineMethodSignature, implemented}
+
+Name       : HWScoutOffline
+ReturnType : UInt32
+Parameters : {WinDir, ErrorInfo, SystemInfoXml}
+Qualifiers : {CarmineMethodSignature, implemented, static}
+
+Name       : HWScout
+ReturnType : UInt32
+Parameters : {ErrorInfo, SystemInfoXml}
+Qualifiers : {CarmineMethodSignature, implemented, static}
+
+Name       : HotfixScout
+ReturnType : UInt32
+Parameters : {ErrorInfo, SystemInfoXml}
+Qualifiers : {CarmineMethodSignature, implemented, static}
+
+Name       : HardDriveScout
+ReturnType : UInt32
+Parameters : {ErrorInfo, SystemInfoXml}
+Qualifiers : {CarmineMethodSignature, implemented, static}
+
+Name       : FilteredHardDriveScout
+ReturnType : UInt32
+Parameters : {DiskIds, VolumeGuids, ErrorInfo, SystemInfoXml}
+Qualifiers : {CarmineMethodSignature, implemented, static}
+
+Name       : VirtualMachineHardDriveScout
+ReturnType : UInt32
+Parameters : {DiskDeviceNames, VolumeGuidPaths, ErrorInfo, SystemInfoXml}
+Qualifiers : {CarmineMethodSignature, implemented, static}
+
+Name       : CreateCertificate
+ReturnType : UInt32
+Parameters : {ServerName, ErrorInfo, ExportedCertificate}
+Qualifiers : {CarmineMethodSignature, implemented, static}
+
+Name       : CreateCertificateForWinPE
+ReturnType : UInt32
+Parameters : {ServerName, ErrorInfo, ExportedCertificate}
+Qualifiers : {CarmineMethodSignature, implemented, static}
+
+Name       : SendServerCertificate
+ReturnType : UInt32
+Parameters : {Certificate, ErrorInfo}
+Qualifiers : {CarmineMethodSignature, implemented, static}
+
+Name       : Reboot
+ReturnType : UInt32
+Parameters : {Flags, ErrorInfo}
+Qualifiers : {CarmineMethodSignature, implemented, static}
+
+Name       : Connect
+ReturnType : UInt32
+Parameters : {ErrorInfo}
+Qualifiers : {CarmineMethodSignature, implemented, static}
+
+Name       : Deploy
+ReturnType : UInt32
+Parameters : {ErrorInfo}
+Qualifiers : {CarmineMethodSignature, implemented, static}
+
+Name       : Restore
+ReturnType : UInt32
+Parameters : {ErrorInfo}
+Qualifiers : {CarmineMethodSignature, implemented, static}
+
+Name       : RebootToPE
+ReturnType : UInt32
+Parameters : {ErrorInfo}
+Qualifiers : {CarmineMethodSignature, implemented, static}
+
+Name       : MoveFileBtwBootVolAndAdminShare
+ReturnType : UInt32
+Parameters : {Copy, PathOnAdminShare, PathOnBoolVolume, ToAdminShare...}
+Qualifiers : {CarmineMethodSignature, implemented, static}
+
+
+
