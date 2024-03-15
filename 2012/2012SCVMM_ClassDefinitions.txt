@@ -1,0 +1,1029 @@
+PS> Get-CimClass -Namespace root/scvmm
+
+
+CimClassName        : __SystemClass
+CimSuperClassName   : 
+CimSuperClass       : 
+CimClassProperties  : {}
+CimClassQualifiers  : {abstract}
+CimClassMethods     : {}
+CimSystemProperties : Microsoft.Management.Infrastructure.CimSystemProperties
+
+CimClassName        : __thisNAMESPACE
+CimSuperClassName   : __SystemClass
+CimSuperClass       : ROOT/scvmm:__SystemClass
+CimClassProperties  : {SECURITY_DESCRIPTOR}
+CimClassQualifiers  : {singleton}
+CimClassMethods     : {}
+CimSystemProperties : Microsoft.Management.Infrastructure.CimSystemProperties
+
+CimClassName        : __Provider
+CimSuperClassName   : __SystemClass
+CimSuperClass       : ROOT/scvmm:__SystemClass
+CimClassProperties  : {Name}
+CimClassQualifiers  : {abstract}
+CimClassMethods     : {}
+CimSystemProperties : Microsoft.Management.Infrastructure.CimSystemProperties
+
+CimClassName        : __Win32Provider
+CimSuperClassName   : __Provider
+CimSuperClass       : ROOT/scvmm:__Provider
+CimClassProperties  : {Name, ClientLoadableCLSID, CLSID, Concurrency...}
+CimClassQualifiers  : {}
+CimClassMethods     : {}
+CimSystemProperties : Microsoft.Management.Infrastructure.CimSystemProperties
+
+CimClassName        : __ProviderRegistration
+CimSuperClassName   : __SystemClass
+CimSuperClass       : ROOT/scvmm:__SystemClass
+CimClassProperties  : {provider}
+CimClassQualifiers  : {abstract}
+CimClassMethods     : {}
+CimSystemProperties : Microsoft.Management.Infrastructure.CimSystemProperties
+
+CimClassName        : __EventProviderRegistration
+CimSuperClassName   : __ProviderRegistration
+CimSuperClass       : ROOT/scvmm:__ProviderRegistration
+CimClassProperties  : {provider, EventQueryList}
+CimClassQualifiers  : {}
+CimClassMethods     : {}
+CimSystemProperties : Microsoft.Management.Infrastructure.CimSystemProperties
+
+CimClassName        : __ObjectProviderRegistration
+CimSuperClassName   : __ProviderRegistration
+CimSuperClass       : ROOT/scvmm:__ProviderRegistration
+CimClassProperties  : {provider, InteractionType, QuerySupportLevels, SupportsBatching...}
+CimClassQualifiers  : {abstract}
+CimClassMethods     : {}
+CimSystemProperties : Microsoft.Management.Infrastructure.CimSystemProperties
+
+CimClassName        : __ClassProviderRegistration
+CimSuperClassName   : __ObjectProviderRegistration
+CimSuperClass       : ROOT/scvmm:__ObjectProviderRegistration
+CimClassProperties  : {provider, InteractionType, QuerySupportLevels, SupportsBatching...}
+CimClassQualifiers  : {}
+CimClassMethods     : {}
+CimSystemProperties : Microsoft.Management.Infrastructure.CimSystemProperties
+
+CimClassName        : __InstanceProviderRegistration
+CimSuperClassName   : __ObjectProviderRegistration
+CimSuperClass       : ROOT/scvmm:__ObjectProviderRegistration
+CimClassProperties  : {provider, InteractionType, QuerySupportLevels, SupportsBatching...}
+CimClassQualifiers  : {}
+CimClassMethods     : {}
+CimSystemProperties : Microsoft.Management.Infrastructure.CimSystemProperties
+
+CimClassName        : __MethodProviderRegistration
+CimSuperClassName   : __ProviderRegistration
+CimSuperClass       : ROOT/scvmm:__ProviderRegistration
+CimClassProperties  : {provider}
+CimClassQualifiers  : {}
+CimClassMethods     : {}
+CimSystemProperties : Microsoft.Management.Infrastructure.CimSystemProperties
+
+CimClassName        : __PropertyProviderRegistration
+CimSuperClassName   : __ProviderRegistration
+CimSuperClass       : ROOT/scvmm:__ProviderRegistration
+CimClassProperties  : {provider, SupportsGet, SupportsPut}
+CimClassQualifiers  : {}
+CimClassMethods     : {}
+CimSystemProperties : Microsoft.Management.Infrastructure.CimSystemProperties
+
+CimClassName        : __EventConsumerProviderRegistration
+CimSuperClassName   : __ProviderRegistration
+CimSuperClass       : ROOT/scvmm:__ProviderRegistration
+CimClassProperties  : {provider, ConsumerClassNames}
+CimClassQualifiers  : {}
+CimClassMethods     : {}
+CimSystemProperties : Microsoft.Management.Infrastructure.CimSystemProperties
+
+CimClassName        : __NAMESPACE
+CimSuperClassName   : __SystemClass
+CimSuperClass       : ROOT/scvmm:__SystemClass
+CimClassProperties  : {Name}
+CimClassQualifiers  : {}
+CimClassMethods     : {}
+CimSystemProperties : Microsoft.Management.Infrastructure.CimSystemProperties
+
+CimClassName        : __IndicationRelated
+CimSuperClassName   : __SystemClass
+CimSuperClass       : ROOT/scvmm:__SystemClass
+CimClassProperties  : {}
+CimClassQualifiers  : {abstract}
+CimClassMethods     : {}
+CimSystemProperties : Microsoft.Management.Infrastructure.CimSystemProperties
+
+CimClassName        : __EventFilter
+CimSuperClassName   : __IndicationRelated
+CimSuperClass       : ROOT/scvmm:__IndicationRelated
+CimClassProperties  : {CreatorSID, EventAccess, EventNamespace, Name...}
+CimClassQualifiers  : {}
+CimClassMethods     : {}
+CimSystemProperties : Microsoft.Management.Infrastructure.CimSystemProperties
+
+CimClassName        : __EventConsumer
+CimSuperClassName   : __IndicationRelated
+CimSuperClass       : ROOT/scvmm:__IndicationRelated
+CimClassProperties  : {CreatorSID, MachineName, MaximumQueueSize}
+CimClassQualifiers  : {abstract}
+CimClassMethods     : {}
+CimSystemProperties : Microsoft.Management.Infrastructure.CimSystemProperties
+
+CimClassName        : __FilterToConsumerBinding
+CimSuperClassName   : __IndicationRelated
+CimSuperClass       : ROOT/scvmm:__IndicationRelated
+CimClassProperties  : {Consumer, CreatorSID, DeliverSynchronously, DeliveryQoS...}
+CimClassQualifiers  : {Association}
+CimClassMethods     : {}
+CimSystemProperties : Microsoft.Management.Infrastructure.CimSystemProperties
+
+CimClassName        : __AggregateEvent
+CimSuperClassName   : __IndicationRelated
+CimSuperClass       : ROOT/scvmm:__IndicationRelated
+CimClassProperties  : {NumberOfEvents, Representative}
+CimClassQualifiers  : {}
+CimClassMethods     : {}
+CimSystemProperties : Microsoft.Management.Infrastructure.CimSystemProperties
+
+CimClassName        : __TimerNextFiring
+CimSuperClassName   : __IndicationRelated
+CimSuperClass       : ROOT/scvmm:__IndicationRelated
+CimClassProperties  : {NextEvent64BitTime, TimerId}
+CimClassQualifiers  : {}
+CimClassMethods     : {}
+CimSystemProperties : Microsoft.Management.Infrastructure.CimSystemProperties
+
+CimClassName        : __Event
+CimSuperClassName   : __IndicationRelated
+CimSuperClass       : ROOT/scvmm:__IndicationRelated
+CimClassProperties  : {SECURITY_DESCRIPTOR, TIME_CREATED}
+CimClassQualifiers  : {abstract}
+CimClassMethods     : {}
+CimSystemProperties : Microsoft.Management.Infrastructure.CimSystemProperties
+
+CimClassName        : __ExtrinsicEvent
+CimSuperClassName   : __Event
+CimSuperClass       : ROOT/scvmm:__Event
+CimClassProperties  : {SECURITY_DESCRIPTOR, TIME_CREATED}
+CimClassQualifiers  : {}
+CimClassMethods     : {}
+CimSystemProperties : Microsoft.Management.Infrastructure.CimSystemProperties
+
+CimClassName        : WNVEventEntry
+CimSuperClassName   : __ExtrinsicEvent
+CimSuperClass       : ROOT/scvmm:__ExtrinsicEvent
+CimClassProperties  : {SECURITY_DESCRIPTOR, TIME_CREATED, CustomerAddress, EventType...}
+CimClassQualifiers  : {dynamic, provider}
+CimClassMethods     : {}
+CimSystemProperties : Microsoft.Management.Infrastructure.CimSystemProperties
+
+CimClassName        : __SystemEvent
+CimSuperClassName   : __ExtrinsicEvent
+CimSuperClass       : ROOT/scvmm:__ExtrinsicEvent
+CimClassProperties  : {SECURITY_DESCRIPTOR, TIME_CREATED}
+CimClassQualifiers  : {}
+CimClassMethods     : {}
+CimSystemProperties : Microsoft.Management.Infrastructure.CimSystemProperties
+
+CimClassName        : __EventDroppedEvent
+CimSuperClassName   : __SystemEvent
+CimSuperClass       : ROOT/scvmm:__SystemEvent
+CimClassProperties  : {SECURITY_DESCRIPTOR, TIME_CREATED, Event, IntendedConsumer}
+CimClassQualifiers  : {}
+CimClassMethods     : {}
+CimSystemProperties : Microsoft.Management.Infrastructure.CimSystemProperties
+
+CimClassName        : __EventQueueOverflowEvent
+CimSuperClassName   : __EventDroppedEvent
+CimSuperClass       : ROOT/scvmm:__EventDroppedEvent
+CimClassProperties  : {SECURITY_DESCRIPTOR, TIME_CREATED, Event, IntendedConsumer...}
+CimClassQualifiers  : {}
+CimClassMethods     : {}
+CimSystemProperties : Microsoft.Management.Infrastructure.CimSystemProperties
+
+CimClassName        : __QOSFailureEvent
+CimSuperClassName   : __EventDroppedEvent
+CimSuperClass       : ROOT/scvmm:__EventDroppedEvent
+CimClassProperties  : {SECURITY_DESCRIPTOR, TIME_CREATED, Event, IntendedConsumer...}
+CimClassQualifiers  : {}
+CimClassMethods     : {}
+CimSystemProperties : Microsoft.Management.Infrastructure.CimSystemProperties
+
+CimClassName        : __ConsumerFailureEvent
+CimSuperClassName   : __EventDroppedEvent
+CimSuperClass       : ROOT/scvmm:__EventDroppedEvent
+CimClassProperties  : {SECURITY_DESCRIPTOR, TIME_CREATED, Event, IntendedConsumer...}
+CimClassQualifiers  : {}
+CimClassMethods     : {}
+CimSystemProperties : Microsoft.Management.Infrastructure.CimSystemProperties
+
+CimClassName        : __InstanceOperationEvent
+CimSuperClassName   : __Event
+CimSuperClass       : ROOT/scvmm:__Event
+CimClassProperties  : {SECURITY_DESCRIPTOR, TIME_CREATED, TargetInstance}
+CimClassQualifiers  : {}
+CimClassMethods     : {}
+CimSystemProperties : Microsoft.Management.Infrastructure.CimSystemProperties
+
+CimClassName        : __InstanceCreationEvent
+CimSuperClassName   : __InstanceOperationEvent
+CimSuperClass       : ROOT/scvmm:__InstanceOperationEvent
+CimClassProperties  : {SECURITY_DESCRIPTOR, TIME_CREATED, TargetInstance}
+CimClassQualifiers  : {}
+CimClassMethods     : {}
+CimSystemProperties : Microsoft.Management.Infrastructure.CimSystemProperties
+
+CimClassName        : __MethodInvocationEvent
+CimSuperClassName   : __InstanceOperationEvent
+CimSuperClass       : ROOT/scvmm:__InstanceOperationEvent
+CimClassProperties  : {SECURITY_DESCRIPTOR, TIME_CREATED, TargetInstance, Method...}
+CimClassQualifiers  : {}
+CimClassMethods     : {}
+CimSystemProperties : Microsoft.Management.Infrastructure.CimSystemProperties
+
+CimClassName        : __InstanceModificationEvent
+CimSuperClassName   : __InstanceOperationEvent
+CimSuperClass       : ROOT/scvmm:__InstanceOperationEvent
+CimClassProperties  : {SECURITY_DESCRIPTOR, TIME_CREATED, TargetInstance, PreviousInstance}
+CimClassQualifiers  : {}
+CimClassMethods     : {}
+CimSystemProperties : Microsoft.Management.Infrastructure.CimSystemProperties
+
+CimClassName        : __InstanceDeletionEvent
+CimSuperClassName   : __InstanceOperationEvent
+CimSuperClass       : ROOT/scvmm:__InstanceOperationEvent
+CimClassProperties  : {SECURITY_DESCRIPTOR, TIME_CREATED, TargetInstance}
+CimClassQualifiers  : {}
+CimClassMethods     : {}
+CimSystemProperties : Microsoft.Management.Infrastructure.CimSystemProperties
+
+CimClassName        : __ClassOperationEvent
+CimSuperClassName   : __Event
+CimSuperClass       : ROOT/scvmm:__Event
+CimClassProperties  : {SECURITY_DESCRIPTOR, TIME_CREATED, TargetClass}
+CimClassQualifiers  : {}
+CimClassMethods     : {}
+CimSystemProperties : Microsoft.Management.Infrastructure.CimSystemProperties
+
+CimClassName        : __ClassDeletionEvent
+CimSuperClassName   : __ClassOperationEvent
+CimSuperClass       : ROOT/scvmm:__ClassOperationEvent
+CimClassProperties  : {SECURITY_DESCRIPTOR, TIME_CREATED, TargetClass}
+CimClassQualifiers  : {}
+CimClassMethods     : {}
+CimSystemProperties : Microsoft.Management.Infrastructure.CimSystemProperties
+
+CimClassName        : __ClassModificationEvent
+CimSuperClassName   : __ClassOperationEvent
+CimSuperClass       : ROOT/scvmm:__ClassOperationEvent
+CimClassProperties  : {SECURITY_DESCRIPTOR, TIME_CREATED, TargetClass, PreviousClass}
+CimClassQualifiers  : {}
+CimClassMethods     : {}
+CimSystemProperties : Microsoft.Management.Infrastructure.CimSystemProperties
+
+CimClassName        : __ClassCreationEvent
+CimSuperClassName   : __ClassOperationEvent
+CimSuperClass       : ROOT/scvmm:__ClassOperationEvent
+CimClassProperties  : {SECURITY_DESCRIPTOR, TIME_CREATED, TargetClass}
+CimClassQualifiers  : {}
+CimClassMethods     : {}
+CimSystemProperties : Microsoft.Management.Infrastructure.CimSystemProperties
+
+CimClassName        : __NamespaceOperationEvent
+CimSuperClassName   : __Event
+CimSuperClass       : ROOT/scvmm:__Event
+CimClassProperties  : {SECURITY_DESCRIPTOR, TIME_CREATED, TargetNamespace}
+CimClassQualifiers  : {}
+CimClassMethods     : {}
+CimSystemProperties : Microsoft.Management.Infrastructure.CimSystemProperties
+
+CimClassName        : __NamespaceModificationEvent
+CimSuperClassName   : __NamespaceOperationEvent
+CimSuperClass       : ROOT/scvmm:__NamespaceOperationEvent
+CimClassProperties  : {SECURITY_DESCRIPTOR, TIME_CREATED, TargetNamespace, PreviousNamespace}
+CimClassQualifiers  : {}
+CimClassMethods     : {}
+CimSystemProperties : Microsoft.Management.Infrastructure.CimSystemProperties
+
+CimClassName        : __NamespaceDeletionEvent
+CimSuperClassName   : __NamespaceOperationEvent
+CimSuperClass       : ROOT/scvmm:__NamespaceOperationEvent
+CimClassProperties  : {SECURITY_DESCRIPTOR, TIME_CREATED, TargetNamespace}
+CimClassQualifiers  : {}
+CimClassMethods     : {}
+CimSystemProperties : Microsoft.Management.Infrastructure.CimSystemProperties
+
+CimClassName        : __NamespaceCreationEvent
+CimSuperClassName   : __NamespaceOperationEvent
+CimSuperClass       : ROOT/scvmm:__NamespaceOperationEvent
+CimClassProperties  : {SECURITY_DESCRIPTOR, TIME_CREATED, TargetNamespace}
+CimClassQualifiers  : {}
+CimClassMethods     : {}
+CimSystemProperties : Microsoft.Management.Infrastructure.CimSystemProperties
+
+CimClassName        : __TimerEvent
+CimSuperClassName   : __Event
+CimSuperClass       : ROOT/scvmm:__Event
+CimClassProperties  : {SECURITY_DESCRIPTOR, TIME_CREATED, NumFirings, TimerId}
+CimClassQualifiers  : {}
+CimClassMethods     : {}
+CimSystemProperties : Microsoft.Management.Infrastructure.CimSystemProperties
+
+CimClassName        : __EventGenerator
+CimSuperClassName   : __IndicationRelated
+CimSuperClass       : ROOT/scvmm:__IndicationRelated
+CimClassProperties  : {}
+CimClassQualifiers  : {abstract}
+CimClassMethods     : {}
+CimSystemProperties : Microsoft.Management.Infrastructure.CimSystemProperties
+
+CimClassName        : __TimerInstruction
+CimSuperClassName   : __EventGenerator
+CimSuperClass       : ROOT/scvmm:__EventGenerator
+CimClassProperties  : {SkipIfPassed, TimerId}
+CimClassQualifiers  : {abstract}
+CimClassMethods     : {}
+CimSystemProperties : Microsoft.Management.Infrastructure.CimSystemProperties
+
+CimClassName        : __AbsoluteTimerInstruction
+CimSuperClassName   : __TimerInstruction
+CimSuperClass       : ROOT/scvmm:__TimerInstruction
+CimClassProperties  : {SkipIfPassed, TimerId, EventDateTime}
+CimClassQualifiers  : {}
+CimClassMethods     : {}
+CimSystemProperties : Microsoft.Management.Infrastructure.CimSystemProperties
+
+CimClassName        : __IntervalTimerInstruction
+CimSuperClassName   : __TimerInstruction
+CimSuperClass       : ROOT/scvmm:__TimerInstruction
+CimClassProperties  : {SkipIfPassed, TimerId, IntervalBetweenEvents}
+CimClassQualifiers  : {}
+CimClassMethods     : {}
+CimSystemProperties : Microsoft.Management.Infrastructure.CimSystemProperties
+
+CimClassName        : __SystemSecurity
+CimSuperClassName   : 
+CimSuperClass       : 
+CimClassProperties  : {}
+CimClassQualifiers  : {singleton}
+CimClassMethods     : {GetSD, GetSecurityDescriptor, Get9XUserList, SetSD...}
+CimSystemProperties : Microsoft.Management.Infrastructure.CimSystemProperties
+
+CimClassName        : FileInformation
+CimSuperClassName   : 
+CimSuperClass       : 
+CimClassProperties  : {CreationTime, FileAttributes, Filename, FileSize...}
+CimClassQualifiers  : {dynamic, provider}
+CimClassMethods     : {CreateDirectory, CreateDirectoryBasic, CheckSharePermissions, DeleteFiles...}
+CimSystemProperties : Microsoft.Management.Infrastructure.CimSystemProperties
+
+CimClassName        : __PARAMETERS
+CimSuperClassName   : 
+CimSuperClass       : 
+CimClassProperties  : {}
+CimClassQualifiers  : {abstract}
+CimClassMethods     : {}
+CimSystemProperties : Microsoft.Management.Infrastructure.CimSystemProperties
+
+CimClassName        : AgentManagement
+CimSuperClassName   : 
+CimSuperClass       : 
+CimClassProperties  : {ID}
+CimClassQualifiers  : {dynamic, provider}
+CimClassMethods     : {Associate, Dissociate, AssociateLibrary, GetVersion...}
+CimSystemProperties : Microsoft.Management.Infrastructure.CimSystemProperties
+
+CimClassName        : CIM_Indication
+CimSuperClassName   : 
+CimSuperClass       : 
+CimClassProperties  : {CorrelatedIndications, IndicationFilterName, IndicationIdentifier, IndicationTime...}
+CimClassQualifiers  : {Abstract, Description, Indication, UMLPackagePath...}
+CimClassMethods     : {}
+CimSystemProperties : Microsoft.Management.Infrastructure.CimSystemProperties
+
+CimClassName        : CIM_ClassIndication
+CimSuperClassName   : CIM_Indication
+CimSuperClass       : ROOT/scvmm:CIM_Indication
+CimClassProperties  : {CorrelatedIndications, IndicationFilterName, IndicationIdentifier, IndicationTime...}
+CimClassQualifiers  : {Description, Indication, UMLPackagePath, Abstract...}
+CimClassMethods     : {}
+CimSystemProperties : Microsoft.Management.Infrastructure.CimSystemProperties
+
+CimClassName        : CIM_ClassDeletion
+CimSuperClassName   : CIM_ClassIndication
+CimSuperClass       : ROOT/scvmm:CIM_ClassIndication
+CimClassProperties  : {CorrelatedIndications, IndicationFilterName, IndicationIdentifier, IndicationTime...}
+CimClassQualifiers  : {Description, Indication, UMLPackagePath, Version}
+CimClassMethods     : {}
+CimSystemProperties : Microsoft.Management.Infrastructure.CimSystemProperties
+
+CimClassName        : CIM_ClassCreation
+CimSuperClassName   : CIM_ClassIndication
+CimSuperClass       : ROOT/scvmm:CIM_ClassIndication
+CimClassProperties  : {CorrelatedIndications, IndicationFilterName, IndicationIdentifier, IndicationTime...}
+CimClassQualifiers  : {Description, Indication, UMLPackagePath, Version}
+CimClassMethods     : {}
+CimSystemProperties : Microsoft.Management.Infrastructure.CimSystemProperties
+
+CimClassName        : CIM_ClassModification
+CimSuperClassName   : CIM_ClassIndication
+CimSuperClass       : ROOT/scvmm:CIM_ClassIndication
+CimClassProperties  : {CorrelatedIndications, IndicationFilterName, IndicationIdentifier, IndicationTime...}
+CimClassQualifiers  : {Description, Indication, UMLPackagePath, Version}
+CimClassMethods     : {}
+CimSystemProperties : Microsoft.Management.Infrastructure.CimSystemProperties
+
+CimClassName        : CIM_InstIndication
+CimSuperClassName   : CIM_Indication
+CimSuperClass       : ROOT/scvmm:CIM_Indication
+CimClassProperties  : {CorrelatedIndications, IndicationFilterName, IndicationIdentifier, IndicationTime...}
+CimClassQualifiers  : {Description, Indication, UMLPackagePath, Abstract...}
+CimClassMethods     : {}
+CimSystemProperties : Microsoft.Management.Infrastructure.CimSystemProperties
+
+CimClassName        : CIM_InstCreation
+CimSuperClassName   : CIM_InstIndication
+CimSuperClass       : ROOT/scvmm:CIM_InstIndication
+CimClassProperties  : {CorrelatedIndications, IndicationFilterName, IndicationIdentifier, IndicationTime...}
+CimClassQualifiers  : {Description, Indication, UMLPackagePath, Version}
+CimClassMethods     : {}
+CimSystemProperties : Microsoft.Management.Infrastructure.CimSystemProperties
+
+CimClassName        : CIM_InstModification
+CimSuperClassName   : CIM_InstIndication
+CimSuperClass       : ROOT/scvmm:CIM_InstIndication
+CimClassProperties  : {CorrelatedIndications, IndicationFilterName, IndicationIdentifier, IndicationTime...}
+CimClassQualifiers  : {Description, Indication, UMLPackagePath, Version}
+CimClassMethods     : {}
+CimSystemProperties : Microsoft.Management.Infrastructure.CimSystemProperties
+
+CimClassName        : CIM_InstDeletion
+CimSuperClassName   : CIM_InstIndication
+CimSuperClass       : ROOT/scvmm:CIM_InstIndication
+CimClassProperties  : {CorrelatedIndications, IndicationFilterName, IndicationIdentifier, IndicationTime...}
+CimClassQualifiers  : {Description, Indication, UMLPackagePath, Version}
+CimClassMethods     : {}
+CimSystemProperties : Microsoft.Management.Infrastructure.CimSystemProperties
+
+CimClassName        : __NotifyStatus
+CimSuperClassName   : 
+CimSuperClass       : 
+CimClassProperties  : {StatusCode}
+CimClassQualifiers  : {abstract}
+CimClassMethods     : {}
+CimSystemProperties : Microsoft.Management.Infrastructure.CimSystemProperties
+
+CimClassName        : __ExtendedStatus
+CimSuperClassName   : __NotifyStatus
+CimSuperClass       : ROOT/scvmm:__NotifyStatus
+CimClassProperties  : {StatusCode, Description, Operation, ParameterInfo...}
+CimClassQualifiers  : {}
+CimClassMethods     : {}
+CimSystemProperties : Microsoft.Management.Infrastructure.CimSystemProperties
+
+CimClassName        : CIM_Error
+CimSuperClassName   : 
+CimSuperClass       : 
+CimClassProperties  : {CIMStatusCode, CIMStatusCodeDescription, ErrorSource, ErrorSourceFormat...}
+CimClassQualifiers  : {Description, Exception, Indication, UMLPackagePath...}
+CimClassMethods     : {}
+CimSystemProperties : Microsoft.Management.Infrastructure.CimSystemProperties
+
+CimClassName        : MSFT_WmiError
+CimSuperClassName   : CIM_Error
+CimSuperClass       : ROOT/scvmm:CIM_Error
+CimClassProperties  : {CIMStatusCode, CIMStatusCodeDescription, ErrorSource, ErrorSourceFormat...}
+CimClassQualifiers  : {Description, Exception, Indication, UMLPackagePath}
+CimClassMethods     : {}
+CimSystemProperties : Microsoft.Management.Infrastructure.CimSystemProperties
+
+CimClassName        : MSFT_ExtendedStatus
+CimSuperClassName   : MSFT_WmiError
+CimSuperClass       : ROOT/scvmm:MSFT_WmiError
+CimClassProperties  : {CIMStatusCode, CIMStatusCodeDescription, ErrorSource, ErrorSourceFormat...}
+CimClassQualifiers  : {Description, Exception, Indication, UMLPackagePath}
+CimClassMethods     : {}
+CimSystemProperties : Microsoft.Management.Infrastructure.CimSystemProperties
+
+CimClassName        : __SecurityRelatedClass
+CimSuperClassName   : 
+CimSuperClass       : 
+CimClassProperties  : {}
+CimClassQualifiers  : {abstract}
+CimClassMethods     : {}
+CimSystemProperties : Microsoft.Management.Infrastructure.CimSystemProperties
+
+CimClassName        : __Trustee
+CimSuperClassName   : __SecurityRelatedClass
+CimSuperClass       : ROOT/scvmm:__SecurityRelatedClass
+CimClassProperties  : {Domain, Name, SID, SidLength...}
+CimClassQualifiers  : {abstract}
+CimClassMethods     : {}
+CimSystemProperties : Microsoft.Management.Infrastructure.CimSystemProperties
+
+CimClassName        : __NTLMUser9X
+CimSuperClassName   : __SecurityRelatedClass
+CimSuperClass       : ROOT/scvmm:__SecurityRelatedClass
+CimClassProperties  : {Authority, Flags, Mask, Name...}
+CimClassQualifiers  : {}
+CimClassMethods     : {}
+CimSystemProperties : Microsoft.Management.Infrastructure.CimSystemProperties
+
+CimClassName        : __ACE
+CimSuperClassName   : __SecurityRelatedClass
+CimSuperClass       : ROOT/scvmm:__SecurityRelatedClass
+CimClassProperties  : {AccessMask, AceFlags, AceType, GuidInheritedObjectType...}
+CimClassQualifiers  : {abstract}
+CimClassMethods     : {}
+CimSystemProperties : Microsoft.Management.Infrastructure.CimSystemProperties
+
+CimClassName        : __SecurityDescriptor
+CimSuperClassName   : __SecurityRelatedClass
+CimSuperClass       : ROOT/scvmm:__SecurityRelatedClass
+CimClassProperties  : {ControlFlags, DACL, Group, Owner...}
+CimClassQualifiers  : {abstract}
+CimClassMethods     : {}
+CimSystemProperties : Microsoft.Management.Infrastructure.CimSystemProperties
+
+CimClassName        : VARPEntry
+CimSuperClassName   : 
+CimSuperClass       : 
+CimClassProperties  : {Context, CustomerAddress, ExpirationForAction, Hostname...}
+CimClassQualifiers  : {dynamic, provider}
+CimClassMethods     : {SetMasterHost, Create, Remove, UpdateFullPolicy...}
+CimSystemProperties : Microsoft.Management.Infrastructure.CimSystemProperties
+
+CimClassName        : P2VSourceFixup
+CimSuperClassName   : 
+CimSuperClass       : 
+CimClassProperties  : {RegFileName, TempFilePath}
+CimClassQualifiers  : {dynamic, provider}
+CimClassMethods     : {RestoreFilesWin2K, Init, LoadSubkey, UnloadSubkey...}
+CimSystemProperties : Microsoft.Management.Infrastructure.CimSystemProperties
+
+CimClassName        : UpdateManagement
+CimSuperClassName   : 
+CimSuperClass       : 
+CimClassProperties  : {}
+CimClassQualifiers  : {dynamic, provider}
+CimClassMethods     : {ScanForUpdates, InstallUpdates}
+CimSystemProperties : Microsoft.Management.Infrastructure.CimSystemProperties
+
+CimClassName        : HttpPostDeploymentJob
+CimSuperClassName   : 
+CimSuperClass       : 
+CimClassProperties  : {Flags, HostName, InstanceID, Port...}
+CimClassQualifiers  : {dynamic, provider}
+CimClassMethods     : {CreateHttpPostClientJob, GetLastJobModificationTime, Resume, Cancel...}
+CimSystemProperties : Microsoft.Management.Infrastructure.CimSystemProperties
+
+CimClassName        : VMTask
+CimSuperClassName   : 
+CimSuperClass       : 
+CimClassProperties  : {Description, ID, Progress}
+CimClassQualifiers  : {dynamic, provider}
+CimClassMethods     : {Cancel, WaitForResult}
+CimSystemProperties : Microsoft.Management.Infrastructure.CimSystemProperties
+
+CimClassName        : NetTeamManagement
+CimSuperClassName   : 
+CimSuperClass       : 
+CimClassProperties  : {}
+CimClassQualifiers  : {dynamic, provider}
+CimClassMethods     : {CreateNicTeaming, DeleteNicTeaming, AddNicToTeam, RemoveNicFromTeam...}
+CimSystemProperties : Microsoft.Management.Infrastructure.CimSystemProperties
+
+CimClassName        : VssRequestor
+CimSuperClassName   : 
+CimSuperClass       : 
+CimClassProperties  : {}
+CimClassQualifiers  : {dynamic, provider}
+CimClassMethods     : {StartSnapshotSet, DeleteSnapshotSet, QuerySnapshotSet, CheckIfVolumeIsSnapshottable}
+CimSystemProperties : Microsoft.Management.Infrastructure.CimSystemProperties
+
+CimClassName        : ErrorInfo
+CimSuperClassName   : 
+CimSuperClass       : 
+CimClassProperties  : {CarmineErrorID, CarmineSource, HRESULT, ID...}
+CimClassQualifiers  : {dynamic, provider}
+CimClassMethods     : {}
+CimSystemProperties : Microsoft.Management.Infrastructure.CimSystemProperties
+
+CimClassName        : GenericCommandExecutionManagement
+CimSuperClassName   : 
+CimSuperClass       : 
+CimClassProperties  : {}
+CimClassQualifiers  : {dynamic, provider}
+CimClassMethods     : {Execute}
+CimSystemProperties : Microsoft.Management.Infrastructure.CimSystemProperties
+
+CimClassName        : HostPerformanceCounter
+CimSuperClassName   : 
+CimSuperClass       : 
+CimClassProperties  : {CounterName, ID, InstanceName, Path...}
+CimClassQualifiers  : {dynamic, provider}
+CimClassMethods     : {}
+CimSystemProperties : Microsoft.Management.Infrastructure.CimSystemProperties
+
+CimClassName        : FileCopy
+CimSuperClassName   : 
+CimSuperClass       : 
+CimClassProperties  : {}
+CimClassQualifiers  : {dynamic, provider}
+CimClassMethods     : {BeginCopyFile}
+CimSystemProperties : Microsoft.Management.Infrastructure.CimSystemProperties
+
+CimClassName        : OSDAction
+CimSuperClassName   : 
+CimSuperClass       : 
+CimClassProperties  : {}
+CimClassQualifiers  : {provider, Static}
+CimClassMethods     : {SetOSDActionDescription, CleanUp, SetupOS, CustomizeOS...}
+CimSystemProperties : Microsoft.Management.Infrastructure.CimSystemProperties
+
+CimClassName        : VMAttachedMedia
+CimSuperClassName   : 
+CimSuperClass       : 
+CimClassProperties  : {Path, PathIsHostResource}
+CimClassQualifiers  : {dynamic, provider}
+CimClassMethods     : {}
+CimSystemProperties : Microsoft.Management.Infrastructure.CimSystemProperties
+
+CimClassName        : AzManScope
+CimSuperClassName   : 
+CimSuperClass       : 
+CimClassProperties  : {Accounts, AccountsAreSIDs, RoleName, Scope}
+CimClassQualifiers  : {}
+CimClassMethods     : {}
+CimSystemProperties : Microsoft.Management.Infrastructure.CimSystemProperties
+
+CimClassName        : DRAdapter
+CimSuperClassName   : 
+CimSuperClass       : 
+CimClassProperties  : {}
+CimClassQualifiers  : {dynamic, provider}
+CimClassMethods     : {InstallHostCertificate, RemoveHostCertificate, InstallPairingCertificate, RemovePairingCertificate...}
+CimSystemProperties : Microsoft.Management.Infrastructure.CimSystemProperties
+
+CimClassName        : VMFedAuth
+CimSuperClassName   : 
+CimSuperClass       : 
+CimClassProperties  : {}
+CimClassQualifiers  : {dynamic, provider}
+CimClassMethods     : {InstallTrustedIssuerCertificate, RemoveTrustedIssuerCertificate, IsCertificatePresent}
+CimSystemProperties : Microsoft.Management.Infrastructure.CimSystemProperties
+
+CimClassName        : DeploymentClientJob
+CimSuperClassName   : 
+CimSuperClass       : 
+CimClassProperties  : {Flags, Port, Privacy, SessionID...}
+CimClassQualifiers  : {dynamic, provider}
+CimClassMethods     : {Create, GetLastJobModificationTime, Resume, Cancel...}
+CimSystemProperties : Microsoft.Management.Infrastructure.CimSystemProperties
+
+CimClassName        : VirtualizationSANUtility
+CimSuperClassName   : 
+CimSuperClass       : 
+CimClassProperties  : {}
+CimClassQualifiers  : {provider}
+CimClassMethods     : {SetLUNMask, IsLUNAccessible, GetHBAPorts, GetDiscoveredHBAPorts...}
+CimSystemProperties : Microsoft.Management.Infrastructure.CimSystemProperties
+
+CimClassName        : MountDisk
+CimSuperClassName   : 
+CimSuperClass       : 
+CimClassProperties  : {FilePath, Flag, ID}
+CimClassQualifiers  : {dynamic, provider}
+CimClassMethods     : {Create, CreateMountedDisk, CreateMountedDiskByDeviceName, Mount...}
+CimSystemProperties : Microsoft.Management.Infrastructure.CimSystemProperties
+
+CimClassName        : V2VServerJob
+CimSuperClassName   : 
+CimSuperClass       : 
+CimClassProperties  : {Flags, ID, Port, Privacy...}
+CimClassQualifiers  : {dynamic, provider}
+CimClassMethods     : {Create, CleanUp, VmxScout, ConvertVMDK2VHD...}
+CimSystemProperties : Microsoft.Management.Infrastructure.CimSystemProperties
+
+CimClassName        : ClusterManagement
+CimSuperClassName   : 
+CimSuperClass       : 
+CimClassProperties  : {}
+CimClassQualifiers  : {dynamic, provider}
+CimClassMethods     : {EnableClusterSharedVolume, SetProperties, SetDependsOnSharedVolumes}
+CimSystemProperties : Microsoft.Management.Infrastructure.CimSystemProperties
+
+CimClassName        : AsyncTask
+CimSuperClassName   : 
+CimSuperClass       : 
+CimClassProperties  : {ClassInstanceContext, ID, Name}
+CimClassQualifiers  : {dynamic, provider}
+CimClassMethods     : {GetProgress, GetProgressExtended, GetFinalResult, CleanUp...}
+CimSystemProperties : Microsoft.Management.Infrastructure.CimSystemProperties
+
+CimClassName        : CIM_ManagedSystemElement
+CimSuperClassName   : 
+CimSuperClass       : 
+CimClassProperties  : {Caption, Description, InstallDate, Name...}
+CimClassQualifiers  : {Abstract}
+CimClassMethods     : {}
+CimSystemProperties : Microsoft.Management.Infrastructure.CimSystemProperties
+
+CimClassName        : CIM_LogicalElement
+CimSuperClassName   : CIM_ManagedSystemElement
+CimSuperClass       : ROOT/scvmm:CIM_ManagedSystemElement
+CimClassProperties  : {Caption, Description, InstallDate, Name...}
+CimClassQualifiers  : {Abstract}
+CimClassMethods     : {}
+CimSystemProperties : Microsoft.Management.Infrastructure.CimSystemProperties
+
+CimClassName        : CIM_System
+CimSuperClassName   : CIM_LogicalElement
+CimSuperClass       : ROOT/scvmm:CIM_LogicalElement
+CimClassProperties  : {Caption, Description, InstallDate, Name...}
+CimClassQualifiers  : {Abstract}
+CimClassMethods     : {}
+CimSystemProperties : Microsoft.Management.Infrastructure.CimSystemProperties
+
+CimClassName        : CIM_Service
+CimSuperClassName   : CIM_LogicalElement
+CimSuperClass       : ROOT/scvmm:CIM_LogicalElement
+CimClassProperties  : {Caption, Description, InstallDate, Name...}
+CimClassQualifiers  : {Abstract}
+CimClassMethods     : {StartService, StopService}
+CimSystemProperties : Microsoft.Management.Infrastructure.CimSystemProperties
+
+CimClassName        : TestMiniProvider
+CimSuperClassName   : 
+CimSuperClass       : 
+CimClassProperties  : {ErrorInfoArrayProperty, ErrorInfoProperty, ID, Name}
+CimClassQualifiers  : {dynamic, provider}
+CimClassMethods     : {Create, GetLargePayload, MethodReturningRefArray, MethodReturningStringArray...}
+CimSystemProperties : Microsoft.Management.Infrastructure.CimSystemProperties
+
+CimClassName        : SCVMM_DiskDrive
+CimSuperClassName   : 
+CimSuperClass       : 
+CimClassProperties  : {DeviceID, IsVHD}
+CimClassQualifiers  : {dynamic, provider}
+CimClassMethods     : {}
+CimSystemProperties : Microsoft.Management.Infrastructure.CimSystemProperties
+
+CimClassName        : WDSManagement
+CimSuperClassName   : 
+CimSuperClass       : 
+CimClassProperties  : {}
+CimClassQualifiers  : {dynamic, provider}
+CimClassMethods     : {RestartService, SetupRemInst, GetRemInstRoot, DeployNbps...}
+CimSystemProperties : Microsoft.Management.Infrastructure.CimSystemProperties
+
+CimClassName        : SoftwareUpdate
+CimSuperClassName   : 
+CimSuperClass       : 
+CimClassProperties  : {IsInstalled, IsRequired, IsUnknown, RevisionID...}
+CimClassQualifiers  : {dynamic, provider}
+CimClassMethods     : {}
+CimSystemProperties : Microsoft.Management.Infrastructure.CimSystemProperties
+
+CimClassName        : SCVMM_NetworkAdapter
+CimSuperClassName   : 
+CimSuperClass       : 
+CimClassProperties  : {DeviceID, LocationInformation}
+CimClassQualifiers  : {dynamic, provider}
+CimClassMethods     : {}
+CimSystemProperties : Microsoft.Management.Infrastructure.CimSystemProperties
+
+CimClassName        : DeploymentServerJob
+CimSuperClassName   : 
+CimSuperClass       : 
+CimClassProperties  : {Flags, ID, Port, Privacy...}
+CimClassQualifiers  : {dynamic, provider}
+CimClassMethods     : {Create, CleanUp}
+CimSystemProperties : Microsoft.Management.Infrastructure.CimSystemProperties
+
+CimClassName        : PerfDataAgent
+CimSuperClassName   : 
+CimSuperClass       : 
+CimClassProperties  : {}
+CimClassQualifiers  : {dynamic, provider}
+CimClassMethods     : {GetAllPerfData}
+CimSystemProperties : Microsoft.Management.Infrastructure.CimSystemProperties
+
+CimClassName        : AzManUtility
+CimSuperClassName   : 
+CimSuperClass       : 
+CimClassProperties  : {}
+CimClassQualifiers  : {dynamic, provider}
+CimClassMethods     : {SetRoleAssignment, SetScopes, SetStorePath, SetScopeAndRoleAssignment}
+CimSystemProperties : Microsoft.Management.Infrastructure.CimSystemProperties
+
+CimClassName        : IPartialObject
+CimSuperClassName   : 
+CimSuperClass       : 
+CimClassProperties  : {ObjectError}
+CimClassQualifiers  : {Abstract}
+CimClassMethods     : {}
+CimSystemProperties : Microsoft.Management.Infrastructure.CimSystemProperties
+
+CimClassName        : CIM_VirtualDisk
+CimSuperClassName   : IPartialObject
+CimSuperClass       : ROOT/scvmm:IPartialObject
+CimClassProperties  : {ObjectError, DiskSize, Path}
+CimClassQualifiers  : {Abstract}
+CimClassMethods     : {}
+CimSystemProperties : Microsoft.Management.Infrastructure.CimSystemProperties
+
+CimClassName        : VMVirtualDisk
+CimSuperClassName   : CIM_VirtualDisk
+CimSuperClass       : ROOT/scvmm:CIM_VirtualDisk
+CimClassProperties  : {ObjectError, DiskSize, Path, ComputerSystemInstanceID...}
+CimClassQualifiers  : {Abstract}
+CimClassMethods     : {Delete}
+CimSystemProperties : Microsoft.Management.Infrastructure.CimSystemProperties
+
+CimClassName        : VMFloppyDisk
+CimSuperClassName   : VMVirtualDisk
+CimSuperClass       : ROOT/scvmm:VMVirtualDisk
+CimClassProperties  : {ObjectError, DiskSize, Path, ComputerSystemInstanceID...}
+CimClassQualifiers  : {dynamic, provider}
+CimClassMethods     : {Delete}
+CimSystemProperties : Microsoft.Management.Infrastructure.CimSystemProperties
+
+CimClassName        : VMHardDisk
+CimSuperClassName   : VMVirtualDisk
+CimSuperClass       : ROOT/scvmm:VMVirtualDisk
+CimClassProperties  : {ObjectError, DiskSize, Path, ComputerSystemInstanceID...}
+CimClassQualifiers  : {dynamic, provider}
+CimClassMethods     : {Delete, SetParent, MergeWithParent, Compact...}
+CimSystemProperties : Microsoft.Management.Infrastructure.CimSystemProperties
+
+CimClassName        : VMDVDDisk
+CimSuperClassName   : VMVirtualDisk
+CimSuperClass       : ROOT/scvmm:VMVirtualDisk
+CimClassProperties  : {ObjectError, DiskSize, Path, ComputerSystemInstanceID...}
+CimClassQualifiers  : {dynamic, provider}
+CimClassMethods     : {Delete}
+CimSystemProperties : Microsoft.Management.Infrastructure.CimSystemProperties
+
+CimClassName        : VMVirtualNetworkSwitch
+CimSuperClassName   : IPartialObject
+CimSuperClass       : ROOT/scvmm:IPartialObject
+CimClassProperties  : {ObjectError, DeviceID, DHCPEnabled, File...}
+CimClassQualifiers  : {dynamic, provider}
+CimClassMethods     : {GetNetworkAdapters, Rename, AttachHostConnection, Remove...}
+CimSystemProperties : Microsoft.Management.Infrastructure.CimSystemProperties
+
+CimClassName        : VMDevice
+CimSuperClassName   : IPartialObject
+CimSuperClass       : ROOT/scvmm:IPartialObject
+CimClassProperties  : {ObjectError, ComputerSystemInstanceID, DeviceID, Name}
+CimClassQualifiers  : {Abstract, CategoryID}
+CimClassMethods     : {Remove}
+CimSystemProperties : Microsoft.Management.Infrastructure.CimSystemProperties
+
+CimClassName        : VMMemory
+CimSuperClassName   : VMDevice
+CimSuperClass       : ROOT/scvmm:VMDevice
+CimClassProperties  : {ObjectError, ComputerSystemInstanceID, DeviceID, Name...}
+CimClassQualifiers  : {CategoryID, dynamic, provider}
+CimClassMethods     : {Remove, QuiesceDevice, RestoreProperties, SetPowerState...}
+CimSystemProperties : Microsoft.Management.Infrastructure.CimSystemProperties
+
+CimClassName        : VMNetworkAdapter
+CimSuperClassName   : VMDevice
+CimSuperClass       : ROOT/scvmm:VMDevice
+CimClassProperties  : {ObjectError, ComputerSystemInstanceID, DeviceID, Name...}
+CimClassQualifiers  : {CategoryID, dynamic, provider}
+CimClassMethods     : {Remove, AttachToVirtualNetwork, DetachFromVirtualNetwork, SetMACAddress}
+CimSystemProperties : Microsoft.Management.Infrastructure.CimSystemProperties
+
+CimClassName        : VMController
+CimSuperClassName   : VMDevice
+CimSuperClass       : ROOT/scvmm:VMDevice
+CimClassProperties  : {ObjectError, ComputerSystemInstanceID, DeviceID, Name...}
+CimClassQualifiers  : {CategoryID, Abstract}
+CimClassMethods     : {Remove}
+CimSystemProperties : Microsoft.Management.Infrastructure.CimSystemProperties
+
+CimClassName        : VMIDEController
+CimSuperClassName   : VMController
+CimSuperClass       : ROOT/scvmm:VMController
+CimClassProperties  : {ObjectError, ComputerSystemInstanceID, DeviceID, Name...}
+CimClassQualifiers  : {CategoryID, dynamic, provider}
+CimClassMethods     : {Remove, AddDVDDrive, GetDVDDrives, AddHardDiskDrive...}
+CimSystemProperties : Microsoft.Management.Infrastructure.CimSystemProperties
+
+CimClassName        : VMDHCPVirtualNetworkServer
+CimSuperClassName   : IPartialObject
+CimSuperClass       : ROOT/scvmm:IPartialObject
+CimClassProperties  : {ObjectError, DefaultGatewayAddress, DNSServers, EndingIPAddress...}
+CimClassQualifiers  : {dynamic, provider}
+CimClassMethods     : {SetDHCPSupport, Configure, ConfigureLeaseTimes, ConfigureDNSServers...}
+CimSystemProperties : Microsoft.Management.Infrastructure.CimSystemProperties
+
+CimClassName        : VMSerialPort
+CimSuperClassName   : IPartialObject
+CimSuperClass       : ROOT/scvmm:IPartialObject
+CimClassProperties  : {ObjectError, ComputerSystemInstanceID, ConnectImmediately, ID...}
+CimClassQualifiers  : {dynamic, provider}
+CimClassMethods     : {Configure}
+CimSystemProperties : Microsoft.Management.Infrastructure.CimSystemProperties
+
+CimClassName        : CIM_VirtualComputerSystem
+CimSuperClassName   : IPartialObject
+CimSuperClass       : ROOT/scvmm:IPartialObject
+CimClassProperties  : {ObjectError, ID, Name, ProcessorCount...}
+CimClassQualifiers  : {Abstract}
+CimClassMethods     : {}
+CimSystemProperties : Microsoft.Management.Infrastructure.CimSystemProperties
+
+CimClassName        : VMComputerSystem
+CimSuperClassName   : CIM_VirtualComputerSystem
+CimSuperClass       : ROOT/scvmm:CIM_VirtualComputerSystem
+CimClassProperties  : {ObjectError, ID, Name, ProcessorCount...}
+CimClassQualifiers  : {dynamic, provider}
+CimClassMethods     : {SetName, SetAllocatedRAM, SetUndoDisks, MergeUndoDisks...}
+CimSystemProperties : Microsoft.Management.Infrastructure.CimSystemProperties
+
+CimClassName        : CIM_VirtualComputerSystemSummary
+CimSuperClassName   : IPartialObject
+CimSuperClass       : ROOT/scvmm:IPartialObject
+CimClassProperties  : {ObjectError, ID, Name, State}
+CimClassQualifiers  : {Abstract}
+CimClassMethods     : {}
+CimSystemProperties : Microsoft.Management.Infrastructure.CimSystemProperties
+
+CimClassName        : VMS
+CimSuperClassName   : CIM_VirtualComputerSystemSummary
+CimSuperClass       : ROOT/scvmm:CIM_VirtualComputerSystemSummary
+CimClassProperties  : {ObjectError, ID, Name, State}
+CimClassQualifiers  : {dynamic, provider}
+CimClassMethods     : {}
+CimSystemProperties : Microsoft.Management.Infrastructure.CimSystemProperties
+
+CimClassName        : VMSCSIController
+CimSuperClassName   : IPartialObject
+CimSuperClass       : ROOT/scvmm:IPartialObject
+CimClassProperties  : {ObjectError, ID, IsShared, MachineID...}
+CimClassQualifiers  : {dynamic, provider}
+CimClassMethods     : {ConfigureController, Remove}
+CimSystemProperties : Microsoft.Management.Infrastructure.CimSystemProperties
+
+CimClassName        : VMIntegrationService
+CimSuperClassName   : IPartialObject
+CimSuperClass       : ROOT/scvmm:IPartialObject
+CimClassProperties  : {ObjectError, AdditionsPresent, AdditionsVersion, ComputerName...}
+CimClassQualifiers  : {dynamic, provider}
+CimClassMethods     : {IsHeartBeating, ShutdownOperatingSystem, IsShutDownEnabled, InstallAdditions}
+CimSystemProperties : Microsoft.Management.Infrastructure.CimSystemProperties
+
+CimClassName        : VMAttachedDrive
+CimSuperClassName   : IPartialObject
+CimSuperClass       : ROOT/scvmm:IPartialObject
+CimClassProperties  : {ObjectError, BusType, ComputerSystemInstanceID, Lun...}
+CimClassQualifiers  : {}
+CimClassMethods     : {Remove}
+CimSystemProperties : Microsoft.Management.Infrastructure.CimSystemProperties
+
+CimClassName        : VMDVDDrive
+CimSuperClassName   : VMAttachedDrive
+CimSuperClass       : ROOT/scvmm:VMAttachedDrive
+CimClassProperties  : {ObjectError, BusType, ComputerSystemInstanceID, Lun...}
+CimClassQualifiers  : {dynamic, provider}
+CimClassMethods     : {Remove, AttachImage, DettachImage}
+CimSystemProperties : Microsoft.Management.Infrastructure.CimSystemProperties
+
+CimClassName        : VMHardDiskDrive
+CimSuperClassName   : VMAttachedDrive
+CimSuperClass       : ROOT/scvmm:VMAttachedDrive
+CimClassProperties  : {ObjectError, BusType, ComputerSystemInstanceID, Lun...}
+CimClassQualifiers  : {dynamic, provider}
+CimClassMethods     : {Remove, AttachImage}
+CimSystemProperties : Microsoft.Management.Infrastructure.CimSystemProperties
+
+CimClassName        : VMService
+CimSuperClassName   : IPartialObject
+CimSuperClass       : ROOT/scvmm:IPartialObject
+CimClassProperties  : {ObjectError, AvailableProcessorReserve, DefaultComputerSystemPath, DefaultVirtualDiskCreationPath...}
+CimClassQualifiers  : {dynamic, provider}
+CimClassMethods     : {ImportVirtualComputerSystem, ExportVirtualComputerSystem, DeleteVirtualComputerSystem, CreateVirtualHardDisk...}
+CimSystemProperties : Microsoft.Management.Infrastructure.CimSystemProperties
+
+CimClassName        : VMFloppyDrive
+CimSuperClassName   : IPartialObject
+CimSuperClass       : ROOT/scvmm:IPartialObject
+CimClassProperties  : {ObjectError, DriveNumber, MachineID, MachineInstanceID...}
+CimClassQualifiers  : {dynamic, provider}
+CimClassMethods     : {AttachImage, ReleaseImage}
+CimSystemProperties : Microsoft.Management.Infrastructure.CimSystemProperties
+
+CimClassName        : P2VServerJob
+CimSuperClassName   : 
+CimSuperClass       : 
+CimClassProperties  : {Flags, ID, Port, Privacy...}
+CimClassQualifiers  : {dynamic, provider}
+CimClassMethods     : {Create, CleanUp, HWScoutOffline, HWScout...}
+CimSystemProperties : Microsoft.Management.Infrastructure.CimSystemProperties
+
+
+
