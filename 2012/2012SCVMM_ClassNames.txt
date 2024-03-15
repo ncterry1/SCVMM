@@ -1,0 +1,261 @@
+PS> Get-CimClass -Namespace root/scvmm | Select-Object -Property CimClassName
+
+
+CimClassName : __SystemClass
+
+CimClassName : __thisNAMESPACE
+
+CimClassName : __Provider
+
+CimClassName : __Win32Provider
+
+CimClassName : __ProviderRegistration
+
+CimClassName : __EventProviderRegistration
+
+CimClassName : __ObjectProviderRegistration
+
+CimClassName : __ClassProviderRegistration
+
+CimClassName : __InstanceProviderRegistration
+
+CimClassName : __MethodProviderRegistration
+
+CimClassName : __PropertyProviderRegistration
+
+CimClassName : __EventConsumerProviderRegistration
+
+CimClassName : __NAMESPACE
+
+CimClassName : __IndicationRelated
+
+CimClassName : __EventFilter
+
+CimClassName : __EventConsumer
+
+CimClassName : __FilterToConsumerBinding
+
+CimClassName : __AggregateEvent
+
+CimClassName : __TimerNextFiring
+
+CimClassName : __Event
+
+CimClassName : __ExtrinsicEvent
+
+CimClassName : WNVEventEntry
+
+CimClassName : __SystemEvent
+
+CimClassName : __EventDroppedEvent
+
+CimClassName : __EventQueueOverflowEvent
+
+CimClassName : __QOSFailureEvent
+
+CimClassName : __ConsumerFailureEvent
+
+CimClassName : __InstanceOperationEvent
+
+CimClassName : __InstanceCreationEvent
+
+CimClassName : __MethodInvocationEvent
+
+CimClassName : __InstanceModificationEvent
+
+CimClassName : __InstanceDeletionEvent
+
+CimClassName : __ClassOperationEvent
+
+CimClassName : __ClassDeletionEvent
+
+CimClassName : __ClassModificationEvent
+
+CimClassName : __ClassCreationEvent
+
+CimClassName : __NamespaceOperationEvent
+
+CimClassName : __NamespaceModificationEvent
+
+CimClassName : __NamespaceDeletionEvent
+
+CimClassName : __NamespaceCreationEvent
+
+CimClassName : __TimerEvent
+
+CimClassName : __EventGenerator
+
+CimClassName : __TimerInstruction
+
+CimClassName : __AbsoluteTimerInstruction
+
+CimClassName : __IntervalTimerInstruction
+
+CimClassName : __SystemSecurity
+
+CimClassName : FileInformation
+
+CimClassName : __PARAMETERS
+
+CimClassName : AgentManagement
+
+CimClassName : CIM_Indication
+
+CimClassName : CIM_ClassIndication
+
+CimClassName : CIM_ClassDeletion
+
+CimClassName : CIM_ClassCreation
+
+CimClassName : CIM_ClassModification
+
+CimClassName : CIM_InstIndication
+
+CimClassName : CIM_InstCreation
+
+CimClassName : CIM_InstModification
+
+CimClassName : CIM_InstDeletion
+
+CimClassName : __NotifyStatus
+
+CimClassName : __ExtendedStatus
+
+CimClassName : CIM_Error
+
+CimClassName : MSFT_WmiError
+
+CimClassName : MSFT_ExtendedStatus
+
+CimClassName : __SecurityRelatedClass
+
+CimClassName : __Trustee
+
+CimClassName : __NTLMUser9X
+
+CimClassName : __ACE
+
+CimClassName : __SecurityDescriptor
+
+CimClassName : VARPEntry
+
+CimClassName : P2VSourceFixup
+
+CimClassName : UpdateManagement
+
+CimClassName : HttpPostDeploymentJob
+
+CimClassName : VMTask
+
+CimClassName : NetTeamManagement
+
+CimClassName : VssRequestor
+
+CimClassName : ErrorInfo
+
+CimClassName : GenericCommandExecutionManagement
+
+CimClassName : HostPerformanceCounter
+
+CimClassName : FileCopy
+
+CimClassName : OSDAction
+
+CimClassName : VMAttachedMedia
+
+CimClassName : AzManScope
+
+CimClassName : DRAdapter
+
+CimClassName : VMFedAuth
+
+CimClassName : DeploymentClientJob
+
+CimClassName : VirtualizationSANUtility
+
+CimClassName : MountDisk
+
+CimClassName : V2VServerJob
+
+CimClassName : ClusterManagement
+
+CimClassName : AsyncTask
+
+CimClassName : CIM_ManagedSystemElement
+
+CimClassName : CIM_LogicalElement
+
+CimClassName : CIM_System
+
+CimClassName : CIM_Service
+
+CimClassName : TestMiniProvider
+
+CimClassName : SCVMM_DiskDrive
+
+CimClassName : WDSManagement
+
+CimClassName : SoftwareUpdate
+
+CimClassName : SCVMM_NetworkAdapter
+
+CimClassName : DeploymentServerJob
+
+CimClassName : PerfDataAgent
+
+CimClassName : AzManUtility
+
+CimClassName : IPartialObject
+
+CimClassName : CIM_VirtualDisk
+
+CimClassName : VMVirtualDisk
+
+CimClassName : VMFloppyDisk
+
+CimClassName : VMHardDisk
+
+CimClassName : VMDVDDisk
+
+CimClassName : VMVirtualNetworkSwitch
+
+CimClassName : VMDevice
+
+CimClassName : VMMemory
+
+CimClassName : VMNetworkAdapter
+
+CimClassName : VMController
+
+CimClassName : VMIDEController
+
+CimClassName : VMDHCPVirtualNetworkServer
+
+CimClassName : VMSerialPort
+
+CimClassName : CIM_VirtualComputerSystem
+
+CimClassName : VMComputerSystem
+
+CimClassName : CIM_VirtualComputerSystemSummary
+
+CimClassName : VMS
+
+CimClassName : VMSCSIController
+
+CimClassName : VMIntegrationService
+
+CimClassName : VMAttachedDrive
+
+CimClassName : VMDVDDrive
+
+CimClassName : VMHardDiskDrive
+
+CimClassName : VMService
+
+CimClassName : VMFloppyDrive
+
+CimClassName : P2VServerJob
+
+
+
