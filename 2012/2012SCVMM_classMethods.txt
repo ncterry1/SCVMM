@@ -1,0 +1,422 @@
+PS> Get-CimClass -Namespace root/scvmm | ForEach-Object {
+    [PSCustomObject]@{
+        ClassName = .CimClassName
+        Methods = (.CimClassMethods | Select-Object -ExpandProperty Name) -join ', '
+    }
+}  
+
+
+ClassName : __SystemClass
+Methods   : 
+
+ClassName : __thisNAMESPACE
+Methods   : 
+
+ClassName : __Provider
+Methods   : 
+
+ClassName : __Win32Provider
+Methods   : 
+
+ClassName : __ProviderRegistration
+Methods   : 
+
+ClassName : __EventProviderRegistration
+Methods   : 
+
+ClassName : __ObjectProviderRegistration
+Methods   : 
+
+ClassName : __ClassProviderRegistration
+Methods   : 
+
+ClassName : __InstanceProviderRegistration
+Methods   : 
+
+ClassName : __MethodProviderRegistration
+Methods   : 
+
+ClassName : __PropertyProviderRegistration
+Methods   : 
+
+ClassName : __EventConsumerProviderRegistration
+Methods   : 
+
+ClassName : __NAMESPACE
+Methods   : 
+
+ClassName : __IndicationRelated
+Methods   : 
+
+ClassName : __EventFilter
+Methods   : 
+
+ClassName : __EventConsumer
+Methods   : 
+
+ClassName : __FilterToConsumerBinding
+Methods   : 
+
+ClassName : __AggregateEvent
+Methods   : 
+
+ClassName : __TimerNextFiring
+Methods   : 
+
+ClassName : __Event
+Methods   : 
+
+ClassName : __ExtrinsicEvent
+Methods   : 
+
+ClassName : WNVEventEntry
+Methods   : 
+
+ClassName : __SystemEvent
+Methods   : 
+
+ClassName : __EventDroppedEvent
+Methods   : 
+
+ClassName : __EventQueueOverflowEvent
+Methods   : 
+
+ClassName : __QOSFailureEvent
+Methods   : 
+
+ClassName : __ConsumerFailureEvent
+Methods   : 
+
+ClassName : __InstanceOperationEvent
+Methods   : 
+
+ClassName : __InstanceCreationEvent
+Methods   : 
+
+ClassName : __MethodInvocationEvent
+Methods   : 
+
+ClassName : __InstanceModificationEvent
+Methods   : 
+
+ClassName : __InstanceDeletionEvent
+Methods   : 
+
+ClassName : __ClassOperationEvent
+Methods   : 
+
+ClassName : __ClassDeletionEvent
+Methods   : 
+
+ClassName : __ClassModificationEvent
+Methods   : 
+
+ClassName : __ClassCreationEvent
+Methods   : 
+
+ClassName : __NamespaceOperationEvent
+Methods   : 
+
+ClassName : __NamespaceModificationEvent
+Methods   : 
+
+ClassName : __NamespaceDeletionEvent
+Methods   : 
+
+ClassName : __NamespaceCreationEvent
+Methods   : 
+
+ClassName : __TimerEvent
+Methods   : 
+
+ClassName : __EventGenerator
+Methods   : 
+
+ClassName : __TimerInstruction
+Methods   : 
+
+ClassName : __AbsoluteTimerInstruction
+Methods   : 
+
+ClassName : __IntervalTimerInstruction
+Methods   : 
+
+ClassName : __SystemSecurity
+Methods   : GetSD, GetSecurityDescriptor, Get9XUserList, SetSD, SetSecurityDescriptor, Set9XUserList, GetCallerAccessRights
+
+ClassName : FileInformation
+Methods   : CreateDirectory, CreateDirectoryBasic, CheckSharePermissions, DeleteFiles, MoveFile, CopyFile, SetObjectSecurity, 
+            AddRemoveSIDAccess, AddRemoveUserAccess, GetPhysicalFilename, GetExpandedFilename, CreateISO, SupportsIMAPI, 
+            PerformFileChecksum, SetReadOnlyAttribute, SetLastModificationTime, ResetHiddenAttribute, SetHiddenAttribute, ReadFileData, 
+            WriteFileData, CreateEmptyFile, QueryVHDData, GetFileInformation, QueryVHD, UpdateVHDParent, ComputeBlockDeltas, 
+            ApplyBlockDeltas, CreateVHDFromPlainFile, ParseDriverINFFile
+
+ClassName : __PARAMETERS
+Methods   : 
+
+ClassName : AgentManagement
+Methods   : Associate, Dissociate, AssociateLibrary, GetVersion, GetMachineInfo, GetComputerAccountName, GetVirtualizationStatus, 
+            EnableHyperV, EnableMpio, InstallMsi, AddPeerCertificate, RemovePeerCertificate, ExportCertificateByName, Reboot, 
+            AddToLocalAdminGroup
+
+ClassName : CIM_Indication
+Methods   : 
+
+ClassName : CIM_ClassIndication
+Methods   : 
+
+ClassName : CIM_ClassDeletion
+Methods   : 
+
+ClassName : CIM_ClassCreation
+Methods   : 
+
+ClassName : CIM_ClassModification
+Methods   : 
+
+ClassName : CIM_InstIndication
+Methods   : 
+
+ClassName : CIM_InstCreation
+Methods   : 
+
+ClassName : CIM_InstModification
+Methods   : 
+
+ClassName : CIM_InstDeletion
+Methods   : 
+
+ClassName : __NotifyStatus
+Methods   : 
+
+ClassName : __ExtendedStatus
+Methods   : 
+
+ClassName : CIM_Error
+Methods   : 
+
+ClassName : MSFT_WmiError
+Methods   : 
+
+ClassName : MSFT_ExtendedStatus
+Methods   : 
+
+ClassName : __SecurityRelatedClass
+Methods   : 
+
+ClassName : __Trustee
+Methods   : 
+
+ClassName : __NTLMUser9X
+Methods   : 
+
+ClassName : __ACE
+Methods   : 
+
+ClassName : __SecurityDescriptor
+Methods   : 
+
+ClassName : VARPEntry
+Methods   : SetMasterHost, Create, Remove, UpdateFullPolicy, UpdatePartialPolicy
+
+ClassName : P2VSourceFixup
+Methods   : RestoreFilesWin2K, Init, LoadSubkey, UnloadSubkey, DisableServices, DisableDrivers, RemovePrograms, AddService, AddDriver, 
+            UpdateMountedDevice, RegSetValue, RegGetValue, RegSetIntValue, RegGetIntValue, Cleanup, RemoveService
+
+ClassName : UpdateManagement
+Methods   : ScanForUpdates, InstallUpdates
+
+ClassName : HttpPostDeploymentJob
+Methods   : CreateHttpPostClientJob, GetLastJobModificationTime, Resume, Cancel, Suspend, CleanUp, GetProgress, GetError, 
+            CreateHttpPostClientJobEx
+
+ClassName : VMTask
+Methods   : Cancel, WaitForResult
+
+ClassName : NetTeamManagement
+Methods   : CreateNicTeaming, DeleteNicTeaming, AddNicToTeam, RemoveNicFromTeam, CreateSwitchTeaming, DeleteSwitchTeaming, 
+            DeleteSwitchAndTeam, EnableVMQOnAdapter
+
+ClassName : VssRequestor
+Methods   : StartSnapshotSet, DeleteSnapshotSet, QuerySnapshotSet, CheckIfVolumeIsSnapshottable
+
+ClassName : ErrorInfo
+Methods   : 
+
+ClassName : GenericCommandExecutionManagement
+Methods   : Execute
+
+ClassName : HostPerformanceCounter
+Methods   : 
+
+ClassName : FileCopy
+Methods   : BeginCopyFile
+
+ClassName : OSDAction
+Methods   : SetOSDActionDescription, CleanUp, SetupOS, CustomizeOS, EnableHyperV, EnableFileServerRole, 
+            EnableFailoverClusteringFeature, EnableMultipathIOFeature, InjectDriver, Convert, DownloadFileFromUrl, ConfigDisk, 
+            ScheduleShutdown, CancelScheduledShutdown
+
+ClassName : VMAttachedMedia
+Methods   : 
+
+ClassName : AzManScope
+Methods   : 
+
+ClassName : DRAdapter
+Methods   : InstallHostCertificate, RemoveHostCertificate, InstallPairingCertificate, RemovePairingCertificate, 
+            ImportBrokerCertificate, RevokeCertificate, IsCertificatePresent, UpdateFirewallRule, UpdateCertRevocationCheck
+
+ClassName : VMFedAuth
+Methods   : InstallTrustedIssuerCertificate, RemoveTrustedIssuerCertificate, IsCertificatePresent
+
+ClassName : DeploymentClientJob
+Methods   : Create, GetLastJobModificationTime, Resume, Cancel, Suspend, CleanUp, GetProgress, GetError
+
+ClassName : VirtualizationSANUtility
+Methods   : SetLUNMask, IsLUNAccessible, GetHBAPorts, GetDiscoveredHBAPorts, GetDiscoveredFabrics, GetLUNControllerPorts, 
+            GetIscsiLUNTargets, GetAssociatedIscsiTargetsForLUNMigration, SetCHAPPasswordForTargetInitiatorPair, 
+            GetPortalsForIscsiTarget, CreateVPort, RemoveVPort, ReenumerateISCSISubsystems, RefreshVDSObjectIdCache
+
+ClassName : MountDisk
+Methods   : Create, CreateMountedDisk, CreateMountedDiskByDeviceName, Mount, Unmount, MountPointVolume, UnmountPointVolume, Query, 
+            GetDiskIdentifier, Cleanup, ExtendVolume
+
+ClassName : V2VServerJob
+Methods   : Create, CleanUp, VmxScout, ConvertVMDK2VHD, GetVMDKInfo, GetVMDKType, CopyPhysicalToFile
+
+ClassName : ClusterManagement
+Methods   : EnableClusterSharedVolume, SetProperties, SetDependsOnSharedVolumes
+
+ClassName : AsyncTask
+Methods   : GetProgress, GetProgressExtended, GetFinalResult, CleanUp, Cancel, SetCancel
+
+ClassName : CIM_ManagedSystemElement
+Methods   : 
+
+ClassName : CIM_LogicalElement
+Methods   : 
+
+ClassName : CIM_System
+Methods   : 
+
+ClassName : CIM_Service
+Methods   : StartService, StopService
+
+ClassName : TestMiniProvider
+Methods   : Create, GetLargePayload, MethodReturningRefArray, MethodReturningStringArray, MethodReturningUINT32Array, 
+            MethodReturningErrorInfoObject, MethodTakingErrorInfoObject, MethodTakingErrorInfoRef, GenericEntry
+
+ClassName : SCVMM_DiskDrive
+Methods   : 
+
+ClassName : WDSManagement
+Methods   : RestartService, SetupRemInst, GetRemInstRoot, DeployNbps, RegisterProvider, UnregisterProvider, IsWdsInstalled, 
+            IsWdsRunning, StopService, StartService
+
+ClassName : SoftwareUpdate
+Methods   : 
+
+ClassName : SCVMM_NetworkAdapter
+Methods   : 
+
+ClassName : DeploymentServerJob
+Methods   : Create, CleanUp
+
+ClassName : PerfDataAgent
+Methods   : GetAllPerfData
+
+ClassName : AzManUtility
+Methods   : SetRoleAssignment, SetScopes, SetStorePath, SetScopeAndRoleAssignment
+
+ClassName : IPartialObject
+Methods   : 
+
+ClassName : CIM_VirtualDisk
+Methods   : 
+
+ClassName : VMVirtualDisk
+Methods   : Delete
+
+ClassName : VMFloppyDisk
+Methods   : Delete
+
+ClassName : VMHardDisk
+Methods   : Delete, SetParent, MergeWithParent, Compact, ConvertDiskType
+
+ClassName : VMDVDDisk
+Methods   : Delete
+
+ClassName : VMVirtualNetworkSwitch
+Methods   : GetNetworkAdapters, Rename, AttachHostConnection, Remove, GetVMDHCPVirtualNetworkServer, Reset
+
+ClassName : VMDevice
+Methods   : Remove
+
+ClassName : VMMemory
+Methods   : Remove, QuiesceDevice, RestoreProperties, SetPowerState, Reset
+
+ClassName : VMNetworkAdapter
+Methods   : Remove, AttachToVirtualNetwork, DetachFromVirtualNetwork, SetMACAddress
+
+ClassName : VMController
+Methods   : Remove
+
+ClassName : VMIDEController
+Methods   : Remove, AddDVDDrive, GetDVDDrives, AddHardDiskDrive, GetHardDiskDrives, RemoveDrive, Reset
+
+ClassName : VMDHCPVirtualNetworkServer
+Methods   : SetDHCPSupport, Configure, ConfigureLeaseTimes, ConfigureDNSServers, ConfigureWINSServers
+
+ClassName : VMSerialPort
+Methods   : Configure
+
+ClassName : CIM_VirtualComputerSystem
+Methods   : 
+
+ClassName : VMComputerSystem
+Methods   : SetName, SetAllocatedRAM, SetUndoDisks, MergeUndoDisks, DiscardUndoDisks, DiscardSavedState, Reset, Delete, TakeSnapshot, 
+            Migrate, SetStateAsync, Create, CreateVM, RegisterVM, UnregisterVM, IsHeartBeating, GetCpu, GetIDEControllers, 
+            GetSCSIControllers, AddSCSIController, AttachFloppyImage, GetFloppyDrives, AddDVDDrive, GetDVDDrives, AddHardDiskDrive, 
+            GetHardDiskDrives, RemoveDrive, GetIntegrationService, AddNetworkAdapter, GetNetworkAdapters, GetSerialPorts, 
+            SetConfigurationProperty, GetConfigurationProperty, SetAutoStartAtLaunch, SetAutoStartAtLaunchDelay, 
+            SetShutdownActionOnQuit, SetAccountNameAndPassword, SetRunAsDefinedAccount, SetSchedulingParameters
+
+ClassName : CIM_VirtualComputerSystemSummary
+Methods   : 
+
+ClassName : VMS
+Methods   : 
+
+ClassName : VMSCSIController
+Methods   : ConfigureController, Remove
+
+ClassName : VMIntegrationService
+Methods   : IsHeartBeating, ShutdownOperatingSystem, IsShutDownEnabled, InstallAdditions
+
+ClassName : VMAttachedDrive
+Methods   : Remove
+
+ClassName : VMDVDDrive
+Methods   : Remove, AttachImage, DettachImage
+
+ClassName : VMHardDiskDrive
+Methods   : Remove, AttachImage
+
+ClassName : VMService
+Methods   : ImportVirtualComputerSystem, ExportVirtualComputerSystem, DeleteVirtualComputerSystem, CreateVirtualHardDisk, 
+            CreateVirtualFloppyDisk, GetHardDiskByFilename, GetHardDisks, GetDVDDisks, CreateVirtualNetworkSwitch, 
+            GetVirtualNetworkSwitches, GetVSNetAdapterNames, GetDefaultVMConfigurationPath, SetVMRCConfiguration, 
+            CreateVMRCCertificateRequest, SetVMRCCertificate, GetVMRCCertificate, StartService, StopService, 
+            GetHyperVSystemCompatibilityInfo, CheckHyperVSystemCompatibilityInfo
+
+ClassName : VMFloppyDrive
+Methods   : AttachImage, ReleaseImage
+
+ClassName : P2VServerJob
+Methods   : Create, CleanUp, HWScoutOffline, HWScout, HotfixScout, HardDriveScout, FilteredHardDriveScout, 
+            VirtualMachineHardDriveScout, CreateCertificate, CreateCertificateForWinPE, SendServerCertificate, Reboot, Connect, Deploy, 
+            Restore, RebootToPE, MoveFileBtwBootVolAndAdminShare
+
+
+
